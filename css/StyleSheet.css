@@ -1,0 +1,123 @@
+﻿			
+/* Slider Styles Starts */
+
+#intro {
+  
+}
+#slider-outer{
+	height:386px;
+	
+}
+#slider {
+    width: 965px;
+    margin: 0 auto;
+    position: relative;
+}
+.scroll {
+	overflow: hidden;
+	width: 976px;
+    margin: 0 auto;
+    position: relative;
+	
+	
+}
+.scrollContainer {
+	position: relative;
+}
+.scrollContainer div.panel {
+    width: 216px;
+	height: 366px;
+	border:#6b6b6b solid 1px;
+	background:#FFF;
+	margin-right:10px;
+	text-align:center;
+	padding:10px 8px 8px 8px;
+	display:inline;
+}
+.inside {
+ text-align:center
+}
+.inside a.inimg img{
+filter: alpha(opacity=100); -moz-opacity:1;opacity:1;
+}
+.inside a.inimg:hover img{
+filter: alpha(opacity=80); -moz-opacity:0.8;opacity:0.8;
+}
+.inside img {
+	display: block;
+	margin: 0 0 10px 0;
+	width: 216px;	
+}
+.inside h2 {
+	font-weight: normal;
+	color: #111;
+	font-size: 16px;
+	margin: 0 0 8px 0;
+}
+.inside p {
+	font-size: 11px;
+	color: #ccc;
+}
+.scrollButtons {
+    position: absolute;
+    top: 150px;
+    cursor: pointer;
+	/*filter:alpha(opacity=100);
+	-moz-opacity:1;
+	-khtml-opacity: 1;
+	opacity: 1;*/
+	z-index:1000;
+}
+.scrollButtons:hover {
+	/*filter:alpha(opacity=80);
+	-moz-opacity:0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;*/
+	
+}
+.scrollButtons.left {
+    left: 3px;
+	
+}
+.scrollButtons.left:hover {
+    left: 3px;
+	
+}
+.scrollButtons.right {
+    right: 3px;
+	
+}
+.scrollButtons.right:hover {
+    right: 3px;
+	
+}
+.hide {
+    display: none;
+}
+
+#slider p{position:relative; top:-2.8em; text-align:center; font-weight:bold; font-family:Arial, Helvetica, sans-serif}
+
+/* Slider Styles Ends */
+
+img {border:0px}
+
+
+/*#slider a:link, #slider a:visited {color:#0CF; text-decoration:none; font-size:.6em; }
+#slider a:hover, #slider a:active {color:#fff; text-decoration:none; font-size:.6em; cursor:pointer}*/
+
+
+/* DEMO STYLES - delete these */
+#info {width:800px; margin:0 auto; color:#666; margin-top:50px; text-align:center; font-size:12px; padding-bottom:25px}
+#info a:link, #info a:visited {color:#ccc}
+#info a:hover, #info a:active {color:#fff}
+
+#demo-outer {width:998px; margin:0 auto; overflow:hidden;}
+.panel .pan_text{ text-align:left; position:relative; padding-bottom:5px; font-size:14px; margin-top:-2px;}
+.panel .pan_text a{font-size:14px;color:#000000;}
+.panel .pan_text a:hover{font-size:14px;color:#f47d07;}
+
+.panel .pan_text span{ position:absolute; right:0px;}
+.panel .pan_text span img{width: 22px;	}
+.panel .pante_zi01{ font-size:12px; color:#4f4f4f;}
+.panel hr{ margin-bottom:5px; }
+.panel .pan_xian{ border-bottom:#4e4e4e solid 1px; padding-top:2px; margin-bottom:12px;}

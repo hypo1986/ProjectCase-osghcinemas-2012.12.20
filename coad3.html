@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>橙天嘉禾影城</title>
+
+<link rel="stylesheet" type="text/css" href="css/css.css" />
+<SCRIPT type=text/javascript src="js/jquery-1.7.js"></SCRIPT>
+<SCRIPT type=text/javascript src="js/jquery.collapser.js"></SCRIPT>
+<SCRIPT type=text/javascript src="js/script.js"></SCRIPT>
+</head>
+
+<body>
+<div class="b_wrap02">
+
+
+<!-- HEAD STAR -->
+<div class="head_apv02">
+
+   <div class="head_apvright">
+      <ul>
+          <li><a href="#" class="dh_li01" title="帮助指南"><img src="images/dh05.png" /></a></li>
+          <li><a href="#" class="dh_li01" title="嘉禾影城"><img src="images/dh04.png" /></a></li>
+          <li><a href="#" class="dh_li01" title="影片排期"><img src="images/dh03.png" /></a></li>
+          <li><a href="#" class="dh_li01" title="新片上映"><img src="images/dh02.png" /></a></li>
+          <li><a href="index.html" class="dh_li02" title="影城首页"><img src="images/dh01.png" /></a></li>
+      </ul>
+   </div>
+   <div class="head_apvleft_left">
+       <ul>
+          <li class="head_apvll_li01"> &nbsp; 首 页</li>
+          <li>放映时间</li>
+       </ul>
+   </div>
+   <div class="head_apvleft">
+      <b>我在<span id="diqu_name">北京</span></b> <a href="javascript:void(0);" onclick="onc_showdqapv()"><img src="images/arrow_up.png" /></a>  
+      <!-- 地区切换弹出层START --> 
+        <div class="head_apvlc" id="head_apvlcid" style="display:none;">
+           <div class="halc_ti">
+              <div class="halc_til">
+                 <ul>
+                    <li style="width:30px; line-height:24px; font-weight:normal;">热门</li>
+                   
+                    <li id="diqu_mti01" onclick="onc_diqu(1)" class="halc_tilli">A-G</li>
+                    <li id="diqu_mti02" onclick="onc_diqu(2)">H-L</li>
+                    <li id="diqu_mti03" onclick="onc_diqu(3)">M-T</li>
+                    <li id="diqu_mti04" onclick="onc_diqu(4)">Z-W</li>
+                    
+                 </ul>
+              </div>
+              
+              <div class="halc_tir">
+                 <input type="text" id="top_key" class="top_input01" value="输入城市名称"  onfocus="onf_input4(this.id);" onblur="onb_input4(this.id)" /><input type="button" class="top_btn01" />
+              </div>
+              
+              <span><img onclick="onc_hiddendqapv()" src="images/m02c_close.gif" /></span>
+              
+           </div>
+           <!-- 切换区域S -->
+           <div class="halc_te" id="halc_te01">
+              <ul>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+                 
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+                 
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+              </ul>
+           </div>
+           <!-- 切换区域END -->
+            <!-- 切换区域S -->
+           <div class="halc_te" id="halc_te02" style="display:none;">
+              <ul>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+                 
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+                 
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+              </ul>
+           </div>
+           <!-- 切换区域END -->
+           <div class="halc_te" id="halc_te03" style="display:none;">
+              <ul>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+                 
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+                 
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+              </ul>
+           </div>
+           <!-- 切换区域END -->
+           <div class="halc_te" id="halc_te04" style="display:none;">
+              <ul>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+                 
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+                 
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+              </ul>
+           </div>
+           <!-- 切换区域END -->
+           
+        </div>
+        <!-- 地区切换弹出层END -->
+   </div>
+   
+</div>
+<!-- HEAD END -->
+<div class="login02">
+  <img src="images/login02.png" /> <span> [ 管理员 ]&nbsp; <a href="#">注销</a> </span>
+</div>
+<!--  二级页 MAIN START -->
+
+<div class="main03">
+    
+    <div class="main03_buz"><img src="images/m03_buz_b2.jpg" /></div>
+    <div class="m03_chste">
+       
+       <p style="padding-left:180px;">只需输入登录所用手机号，我们会马上把确认短信发给你</p>
+       <div class="m03_chste_te">
+       
+          <ul>
+             <li>手机号：<input type="text" class="mob_bdinput" value="13222222222" /></li>
+             <li>验证码：<input type="text" class="mob_bdinput2" value="fg5r" /> &nbsp;<img src="images/m03_chs_yzm.png" /> &nbsp;<a href="#" class="colw">看不清，换一张</a></li>
+             <li style="padding-top:15px; padding-left:55px;"><input type="button" class="m03_chs_btn02" readonly="readonly" /></li>
+          </ul>
+          
+          <div class="chste_tejhzi">输入短信接收到的激活码，以确定是本人在操作</div>
+          <ul>
+             
+             <li>激活码：<input type="text" class="mob_bdinput2" value="" /> &nbsp;<span>若你在<font color="#ff9c00">60</font>秒后没有收到激活码，请点击此处</span><a href="#">重发</a>/<a href="#">更换手机号</a></li>
+             
+          </ul>
+          
+       </div>
+       
+       <div class="m03_chste_an"><input type="button" class="m03r_btn02" /> &nbsp;&nbsp;<input type="button" class="m03r_btn01" /></div>
+       
+    </div>
+
+</div>
+<!--  二级页 MAIN END -->
+
+
+<div class="bottom">
+    <a href="#">关于我们</a> | <a href="#">项目合作</a> | <a href="#">版权声明</a> | <a href="#">招聘信息</a> | <a href="#">联系方式</a>
+    <br/>copyright2006-2011 橙天娱乐嘉禾集团（国际）控股有限公司   京ICP备06040851号
+</div>
+
+</div>
+
+<div id="float_apv" class="m03_ceapv3" style="top:660px;"></div>
+
+</body>
+</html>

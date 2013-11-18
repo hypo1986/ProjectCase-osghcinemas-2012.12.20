@@ -1,0 +1,420 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>橙天嘉禾影城</title>
+
+<link rel="stylesheet" type="text/css" href="css/css.css" />
+<SCRIPT type=text/javascript src="js/jquery-1.7.js"></SCRIPT>
+<SCRIPT type=text/javascript src="js/jquery.collapser.js"></SCRIPT>
+<SCRIPT type=text/javascript src="js/script.js"></SCRIPT>
+</head>
+
+<body>
+<div class="b_wrap02">
+
+
+<!-- HEAD STAR -->
+<div class="head_apv02">
+
+   <div class="head_apvright">
+      <ul>
+          <li><a href="#" class="dh_li01" title="帮助指南"><img src="images/dh05.png" /></a></li>
+          <li><a href="#" class="dh_li01" title="嘉禾影城"><img src="images/dh04.png" /></a></li>
+          <li><a href="#" class="dh_li01" title="影片排期"><img src="images/dh03.png" /></a></li>
+          <li><a href="#" class="dh_li01" title="新片上映"><img src="images/dh02.png" /></a></li>
+          <li><a href="index.html" class="dh_li02" title="影城首页"><img src="images/dh01.png" /></a></li>
+      </ul>
+   </div>
+   <div class="head_apvleft_left">
+       <ul>
+          <li class="head_apvll_li01"> &nbsp; 首 页</li>
+          <li>放映时间</li>
+       </ul>
+   </div>
+   <div class="head_apvleft">
+      <b>我在<span id="diqu_name">北京</span></b> <a href="javascript:void(0);" onclick="onc_showdqapv()"><img src="images/arrow_up.png" /></a>  
+      <!-- 地区切换弹出层START --> 
+        <div class="head_apvlc" id="head_apvlcid" style="display:none;">
+           <div class="halc_ti">
+              <div class="halc_til">
+                 <ul>
+                    <li style="width:30px; line-height:24px; font-weight:normal;">热门</li>
+                   
+                    <li id="diqu_mti01" onclick="onc_diqu(1)" class="halc_tilli">A-G</li>
+                    <li id="diqu_mti02" onclick="onc_diqu(2)">H-L</li>
+                    <li id="diqu_mti03" onclick="onc_diqu(3)">M-T</li>
+                    <li id="diqu_mti04" onclick="onc_diqu(4)">Z-W</li>
+                    
+                 </ul>
+              </div>
+              
+              <div class="halc_tir">
+                 <input type="text" id="top_key" class="top_input01" value="输入城市名称"  onfocus="onf_input4(this.id);" onblur="onb_input4(this.id)" /><input type="button" class="top_btn01" />
+              </div>
+              
+              <span><img onclick="onc_hiddendqapv()" src="images/m02c_close.gif" /></span>
+              
+           </div>
+           <!-- 切换区域S -->
+           <div class="halc_te" id="halc_te01">
+              <ul>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+                 
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+                 
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+              </ul>
+           </div>
+           <!-- 切换区域END -->
+            <!-- 切换区域S -->
+           <div class="halc_te" id="halc_te02" style="display:none;">
+              <ul>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+                 
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+                 
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+              </ul>
+           </div>
+           <!-- 切换区域END -->
+           <div class="halc_te" id="halc_te03" style="display:none;">
+              <ul>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+                 
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+                 
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+              </ul>
+           </div>
+           <!-- 切换区域END -->
+           <div class="halc_te" id="halc_te04" style="display:none;">
+              <ul>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+                 
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+                 
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+              </ul>
+           </div>
+           <!-- 切换区域END -->
+           
+        </div>
+        <!-- 地区切换弹出层END -->
+   </div>
+   
+</div>
+<!-- HEAD END -->
+<div class="login02">
+  <img src="images/login02.png" /> <span> [ 管理员 ]&nbsp; <a href="#">注销</a> </span>
+</div>
+<!--  二级页 MAIN START -->
+
+<div class="main02">
+    <!--  资讯三级页 RIGHT START -->
+    <div class="mzx_right">
+       <div><a href="#"><img src="images/zx_sanstu.gif" /></a></div>
+       <div class="mzx_rli">
+          <ul>
+             <li><a href="#"><img src="images/zx_sanbtu.gif" /></a></li>
+             <li><a href="#"><img src="images/zx_sanbtu.gif" /></a></li>
+             <li><a href="#"><img src="images/zx_sanbtu.gif" /></a></li>
+             <li><a href="#"><img src="images/zx_sanbtu.gif" /></a></li>
+          </ul>
+       </div>
+       <!-- 右侧地区下拉区域START -->
+       <div class="mzx_rdiqu">
+          <div><img src="images/zx_sanr_yyti.jpg" /></div>
+          <div class="mzx_rdqcen">
+              
+              <!--  二级页层展开合并三级效果START -->
+<DIV class="boxes" style="width:224px;overflow:hidden;">
+
+<!-- 城市层 start  -->
+<UL style="background:#5e5e5e; ">
+ <span class=demo7><A  href="#" style="text-decoration:none; color:#FFF; line-height:26px; width:214px; display:block; font-size:14px; padding-left:10px;border-bottom:#000 solid 1px; " onFocus="this.blur()" >北京市</A></span>
+  <LI>
+  <!-- 店面层 start  -->
+  <UL style="background:#868686;">
+    <span class=demo7><A  href="#" class="m02l_ali01" onFocus="this.blur()" >嘉禾影院东城店</A> </span>
+  </UL>
+  <!-- 店面层 end  -->
+  <!-- 店面层 start  -->
+  <UL style="background:#868686;">
+    <span class=demo7><A  href="#"  class="m02l_ali02" onFocus="this.blur()" >嘉禾影院上地店</A> </span>
+  </UL>
+  <!-- 店面层 end  -->
+  <!-- 店面层 start  -->
+  <UL style="background:#868686;">
+    <span class=demo7><A  href="#" class="m02l_ali01" onFocus="this.blur()" >嘉禾影院万柳店</A> </span>
+  </UL>
+  <!-- 店面层 end  -->
+  <!-- 店面层 start  -->
+  <UL style="background:#868686;">
+    <span class=demo7><A  href="#" class="m02l_ali01" onFocus="this.blur()" >嘉禾影院中关村店</A> </span>
+  </UL>
+  <!-- 店面层 end  -->
+ </LI>
+</UL>
+<!-- 城市层 end  -->
+
+<!-- 城市层 start  -->
+<UL style="background:#5e5e5e; ">
+ <span class=demo7><A  href="#" style="text-decoration:none; color:#FFF; line-height:26px; width:214px; display:block; font-size:14px; padding-left:10px;border-bottom:#000 solid 1px; " onFocus="this.blur()" 
+ 
+>河北省</A> </span>
+  <LI>
+  <!-- 店面层 start  -->
+  <UL style="background:#868686;">
+    <span class=demo7><A  href="#" class="m02l_ali01" onFocus="this.blur()" >嘉禾影院东城店</A> </span>
+  </UL>
+  <!-- 店面层 end  -->
+  <!-- 店面层 start  -->
+  <UL style="background:#868686;">
+    <span class=demo7><A  href="#"  class="m02l_ali01" onFocus="this.blur()" >嘉禾影院上地店</A> </span>
+  </UL>
+  <!-- 店面层 end  -->
+  <!-- 店面层 start  -->
+  <UL style="background:#868686;">
+    <span class=demo7><A  href="#" class="m02l_ali01" onFocus="this.blur()" >嘉禾影院万柳店</A> </span>
+  </UL>
+  <!-- 店面层 end  -->
+ </LI>
+</UL>
+<!-- 城市层 end  -->
+<!-- 城市层 start  -->
+<UL style="background:#5e5e5e; ">
+ <span class=demo7><A  href="#" style="text-decoration:none; color:#FFF; line-height:26px; width:214px; display:block; font-size:14px; padding-left:10px;border-bottom:#000 solid 1px; " onFocus="this.blur()" 
+ 
+>山东省</A> </span>
+  <LI>
+  <!-- 店面层 start  -->
+  <UL style="background:#868686;">
+    <span class=demo7><A  href="#" class="m02l_ali01" onFocus="this.blur()" >嘉禾影院东城店</A> </span>
+  </UL>
+  <!-- 店面层 end  -->
+  <!-- 店面层 start  -->
+  <UL style="background:#868686;">
+    <span class=demo7><A  href="#"  class="m02l_ali01" onFocus="this.blur()" >嘉禾影院上地店</A> </span>
+  </UL>
+  <!-- 店面层 end  -->
+  <!-- 店面层 start  -->
+  <UL style="background:#868686;">
+    <span class=demo7><A  href="#" class="m02l_ali01" onFocus="this.blur()" >嘉禾影院万柳店</A> </span>
+  </UL>
+  <!-- 店面层 end  -->
+ </LI>
+</UL>
+<!-- 城市层 end  -->
+<!-- 城市层 start  -->
+<UL style="background:#5e5e5e; ">
+ <span class=demo7><A  href="#" style="text-decoration:none; color:#FFF; line-height:26px; width:214px; display:block; font-size:14px; padding-left:10px;border-bottom:#000 solid 1px; " onFocus="this.blur()" 
+ 
+>江苏省</A> </span>
+  <LI>
+  <!-- 店面层 start  -->
+  <UL style="background:#868686;">
+    <span class=demo7><A  href="#" class="m02l_ali01" onFocus="this.blur()" >嘉禾影院东城店</A> </span>
+  </UL>
+  <!-- 店面层 end  -->
+  <!-- 店面层 start  -->
+  <UL style="background:#868686;">
+    <span class=demo7><A  href="#"  class="m02l_ali01" onFocus="this.blur()" >嘉禾影院上地店</A> </span>
+  </UL>
+  <!-- 店面层 end  -->
+  <!-- 店面层 start  -->
+  <UL style="background:#868686;">
+    <span class=demo7><A  href="#" class="m02l_ali01" onFocus="this.blur()" >嘉禾影院万柳店</A> </span>
+  </UL>
+  <!-- 店面层 end  -->
+ </LI>
+</UL>
+<!-- 城市层 end  -->
+ 
+</DIV>
+<!--  二级页层展开合并三级效果END -->
+              
+          </div>
+          <div><img src="images/zx_sanr_yybot.jpg" /></div>
+       </div>
+       <!-- 右侧地区下拉区域END -->
+    </div>
+    <!--  资讯三级页 RIGHT END -->
+    <!--  资讯三级页 LEFT START -->
+    <div class="mzx_left">
+        <div><img src="images/zx_sanlt.jpg" /></div>
+        
+        <div class="mzx_lcen">
+           <h2>丁丁历险记》11.15上映 独家解密全角色档案</h2>
+           <div class="mzx_lctime">2011-11-11 11:11:11 &nbsp;&nbsp; 编辑：心沫儿</div>
+           <div class="mzx_lcxuxian"></div>
+           
+           <div class="mzx_lctext">
+             <p class="mzx_lcteimg">
+             <img src="images/zx_santetu.gif" /> <br/><span>《丁丁历险记》全新剧照</span>
+             <br/><br/>
+             </p>
+             <p>
+             距离派拉蒙年度3D视效冒险巨制《丁丁历险记》11月15日登陆我国内地已经越来越近，对于铁杆丁丁迷来说，片中个性鲜明、各有来头的经典角色可谓老朋友一般；而对于不大了解丁丁的普通影迷和观众来说，在观影前如果能快速掌握片中人物必备的基本知识，则必将令你观看时乐趣倍增，为此我们为大家特别准备了这期《丁丁历险记》人物速成班。<br/><br/>
+             </p>
+             <p>
+              此次的《丁丁历险记》由史蒂文·斯皮尔伯格和彼得·杰克逊两大世界级名导联手打造，作为计划中三部曲的第一部，影片涵盖了原漫画系列中的第9集《金钳螃蟹贩毒集团》（Le Crabe aux pinces d'or，法语原名，下同）、第11集《独角兽号的秘密》（Le Secret de la Licorne）以及第12集《红色拉克姆的宝藏》（Le Trésor de Rackham le Rouge）三部漫画，所以登场亮相的角色可谓众多，下面我们就为大家独家解密，快速了解这些或熟悉或陌生的登场角色们。<br/><br/>
+             </p>
+             <p>《丁丁历险记：独角兽号的秘密》的情节由三个故事组成：第9部《红钳螃蟹贩毒集团破获记》（Le Crabe aux pinces d'or）、第11部《独角兽号的秘密》（Le Secret de la Licorne）以及第12部《红色拉克姆的宝藏》（Le Trésor de Rackham le Rouge）的姐妹篇前篇；讲述了丁丁在布鲁塞尔的老街市场买回一艘古船模型，想要送给阿道克船长，不想一系列麻烦因此接踵而至。原来这艘船模型恰巧是阿道克船长的祖先——查尔斯二世统治时期弗朗西斯·阿道克爵士的遗物之一，其中藏着海盗头子"红色拉克姆"的宝藏秘密。在他们的朋友杜邦侦探的帮助下，丁丁带着白雪和阿道克船长一起试图揭开"独角兽号"的秘密，并出发去寻找"红色拉克姆"的财宝。</p>
+             
+           </div>
+           
+           <div class="mzx_sfenye">
+           
+             <span><a class="mzf_lb2" href="javascript:void(0);"><</a></span>
+             <span><a class="mzf_lb" href="javascript:void(0);">1</a></span>
+             <span><a href="javascript:void(0);">2</a></span>
+             <span><a href="javascript:void(0);">3</a></span>
+             <span><a href="javascript:void(0);">4</a></span>
+             <b>...</b>
+             <span><a href="javascript:void(0);">10</a></span>
+             <span><a href="javascript:void(0);">></a></span>
+             
+             <span>&nbsp;&nbsp;&nbsp;&nbsp;到第 <input type="text" class="mzx_sfy_input" /> 页 &nbsp;<input type="button" value="确定" class="mzx_sfy_btn" /></span>
+              
+              <div class="mzx_sfyapv">
+               <img src="images/zx_sanfrtu1.gif" title="复制本文链接" /> &nbsp;&nbsp;
+               <img src="images/zx_sanfrtu2.gif" title="打印" />
+              </div>
+           
+            </div>
+            
+            <div class="mzx_lcxuxian"></div>
+            <div class="mzx_lcabout" style="padding-bottom:20px;">
+               <h4>相关电影</h4>
+               <p>
+                  <a href="javascript:void(0);"><img src="images/zx_sanxg.gif" class="lcapimg" /></a>
+                  <b>丁丁历险记</b> <br/>
+                  
+                    导演：肖恩·利维  &nbsp;&nbsp;  主演：休·杰克曼、伊万杰琳·莉莉、凯文·杜兰 <br/>
+                    上映日期：2011年11月11日
+                    <br/>
+               </p>
+               <span>
+                    <a href="javascript:void(0);" title="放映时间"><img src="images/fylist_time.png" /></a> &nbsp;
+                    <a href="javascript:void(0);" title="我要购票"><img src="images/fylist_buy.png" /></a> 
+               </span>
+            </div>
+            <div class="mzx_lcxuxian"></div>
+            <div class="mzx_lcabout" style="padding:10px 0px;">
+               <h4>关键词:<a href="javascript:void(0);">丁丁历险记</a> 
+               <a href="javascript:void(0);">独角兽号的秘密</a> 
+               <a href="javascript:void(0);">伊万杰琳·莉莉</a> 
+               <a href="javascript:void(0);">凯文·杜兰</a> 
+               <a href="javascript:void(0);">预告片</a> 
+               <a href="javascript:void(0);">视频</a>
+               </h4>
+            </div>
+            <div class="mzx_lcxuxian"></div>   
+            
+            <div class="mzx_lcabout">
+               <h4>相关新闻</h4>
+               <div class="mzx_lcanews">
+                  <ul>
+                     <li><b>·</b> <a href="javascript:void(0);">好莱坞六大公司海外票房飘红 将创年度历史新高</a> (11月10日)</li>
+                     <li><b>·</b> <a href="javascript:void(0);">台北票房:"时间规划局"蝉联"铁甲钢拳"居亚</a> (11月10日)</li>
+                     <li><b>·</b> <a href="javascript:void(0);">法国票房："无法触碰"成黑马 "丁丁"后劲不足</a> (11月10日)</li>
+                     <li><b>·</b> <a href="javascript:void(0);">安迪·瑟金斯银幕进化论 CG时代的伟大表演者</a> (11月10日)</li>
+                     <li><b>·</b> <a href="javascript:void(0);">《铁甲钢拳》秘闻趣事大搜罗 幕后特辑全记录</a> (11月10日)</li>
+                  </ul>
+                  
+               </div>
+            </div>
+            
+        </div>
+
+        <div><img src="images/zx_sanlb.jpg" /></div>
+    </div>
+    <!--  资讯三级页 LEFT END -->
+   
+   
+</div>
+<!--  二级页 MAIN END -->
+
+
+<div class="bottom">
+    <a href="#">关于我们</a> | <a href="#">项目合作</a> | <a href="#">版权声明</a> | <a href="#">招聘信息</a> | <a href="#">联系方式</a>
+    <br/>copyright2006-2011 橙天娱乐嘉禾集团（国际）控股有限公司   京ICP备06040851号
+</div>
+
+</div>
+
+</body>
+</html>

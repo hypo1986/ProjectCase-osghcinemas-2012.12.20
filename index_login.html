@@ -1,0 +1,735 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>橙天嘉禾影城</title>
+
+<link rel="stylesheet" type="text/css" href="css/css.css" />
+
+<SCRIPT type=text/javascript src="js/jquery-1.7.js"></SCRIPT>
+<SCRIPT type=text/javascript src="js/coin-slider.js"></SCRIPT>
+<SCRIPT type=text/javascript src="js/script.js"></SCRIPT>
+
+<link rel="stylesheet" href="css/StyleSheet.css" type="text/css" /> 
+<script src="js/slider.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+<div class="b_wrap">
+
+
+<!-- HEAD STAR -->
+<div class="head_apv">
+   <div class="head_apvright">
+      <ul>
+          <li><a href="#" class="dh_li01" title="帮助指南"><img src="images/dh05.png" /></a></li>
+          <li><a href="fy_影城页.html" class="dh_li01" title="嘉禾影城"><img src="images/dh04.png" /></a></li>
+          <li><a href="fy_time01.html" class="dh_li01" title="影片排期"><img src="images/dh03.png" /></a></li>
+          <li><a href="fy_time02.html" class="dh_li01" title="新片上映"><img src="images/dh02.png" /></a></li>
+          <li><a href="index.html" class="dh_li02" title="影城首页"><img src="images/dh01.png" /></a></li>
+      </ul>
+   </div>
+   <div class="head_apvleft">
+      <b onclick="onc_showdqapv()">我在<span id="diqu_name">北京</span> <img src="images/arrow_up.png" /></b>
+       <!-- 地区切换弹出层START --> 
+        <div class="head_apvlc" id="head_apvlcid" style="display:none;">
+           <div class="halc_ti">
+              <div class="halc_til">
+                 <ul>
+                    <li style="width:30px; line-height:24px; font-weight:normal;">&nbsp;</li>
+                   
+                    <li id="diqu_mti01" onclick="onc_diqu(1)" class="halc_tilli">A-G</li>
+                    <li id="diqu_mti02" onclick="onc_diqu(2)">H-L</li>
+                    <li id="diqu_mti03" onclick="onc_diqu(3)">M-T</li>
+                    <li id="diqu_mti04" onclick="onc_diqu(4)">Z-W</li>
+                    
+                 </ul>
+              </div>
+              
+              <div class="halc_tir">
+                 <input type="text" id="top_key" class="top_input01" value="输入城市名称"  onfocus="onf_input4(this.id);" onblur="onb_input4(this.id)" /><input type="button" class="top_btn01" />
+              </div>
+              
+              <span><img onclick="onc_hiddendqapv()" src="images/m02c_close.gif" /></span>
+              
+           </div>
+           <!-- 切换区域S -->
+           <div class="halc_te" id="halc_te01">
+              <ul>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+                 
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+                 
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+              </ul>
+           </div>
+           <!-- 切换区域END -->
+            <!-- 切换区域S -->
+           <div class="halc_te" id="halc_te02" style="display:none;">
+              <ul>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+                 
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+                 
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+              </ul>
+           </div>
+           <!-- 切换区域END -->
+           <div class="halc_te" id="halc_te03" style="display:none;">
+              <ul>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+                 
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+                 
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+              </ul>
+           </div>
+           <!-- 切换区域END -->
+           <div class="halc_te" id="halc_te04" style="display:none;">
+              <ul>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+                 
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+                 
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+                 <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+              </ul>
+           </div>
+           <!-- 切换区域END -->
+           
+        </div>
+        <!-- 地区切换弹出层END -->
+   </div>
+</div>
+<!-- HEAD END -->
+<div class="logo_apv"><a href="index.html"><img src="images/logo.png" /></a></div>
+<!-- LOGIN STAR -->
+
+<!--<div class="login_apv">
+
+    <div class="login_te01">
+      <input type="text" id="username" class="login_input01" value="登录邮箱/手机号"  onfocus="onf_input(this.id);" onblur="onb_input(this.id)" />
+    </div>
+    <div class="login_te01">
+      <input type="text" id="password" class="login_input03" value="密码"  onfocus="onf_input2(this.id);" onblur="onb_input2(this.id)" /> 
+      &nbsp;&nbsp;&nbsp;<a href="#">忘记密码</a>
+    </div>
+    <div class="login_te01">
+      <input type="checkbox" checked="checked"/> 保存登录信息 
+      <span><a href="#">注册</a></span>
+    </div>
+    <div class="login_te01">
+      <input type="button" class="login_btn01" />
+    </div>
+    -->
+<div class="login_apv" style="background:url(images/login_bg2.png);">   
+    <div class="login_lote">
+       <img class="ltimg" src="images/touxiang03.gif" />
+       <span><a href="#" class="loname">心沫儿</a></span>
+       <p>
+         乌鲁木齐<br/>
+         11.12.12加入<br/>
+         <a href="#">订单管理</a><br/>
+         <a href="#">退出</a>
+       </p>
+    </div>
+    
+    
+    <div class="login_te02" style="margin-top:54px;z-index:1000;">
+      <input id="sel01" class="login_select01" value="选择影院" readonly="readonly" onclick="onc_loginapv(1)" />
+      
+       <div class="login_liapv" id="login_liapv01" style="width:188px; display:none;">
+               <div class="login_liapv_te">
+                  <ul>
+                     <ol><a href="javascript:void(0);" onclick="onc_selvalue(this.innerHTML,1)" style="color:#af7b4b">北京</a></ol>
+                     <ol><a href="javascript:void(0);" onclick="onc_selvalue(this.innerHTML,1)">上海</a></ol>
+                     <ol><a href="javascript:void(0);" onclick="onc_selvalue(this.innerHTML,1)">天津</a></ol>
+                     <ol><a href="javascript:void(0);" onclick="onc_selvalue(this.innerHTML,1)">广州</a></ol>
+                     <ol><a href="javascript:void(0);" onclick="onc_selvalue(this.innerHTML,1)">深圳</a></ol>
+                     
+                     <ol><a href="javascript:void(0);" onclick="onc_selvalue(this.innerHTML,1)">北京</a></ol>
+                     <ol><a href="javascript:void(0);" onclick="onc_selvalue(this.innerHTML,1)">上海</a></ol>
+                     <ol><a href="javascript:void(0);" onclick="onc_selvalue(this.innerHTML,1)">天津</a></ol>
+                     <ol><a href="javascript:void(0);" onclick="onc_selvalue(this.innerHTML,1)">广州</a></ol>
+                     <ol><a href="javascript:void(0);" onclick="onc_selvalue(this.innerHTML,1)">深圳</a></ol>
+                     
+                     <ol><a href="javascript:void(0);" onclick="onc_selvalue(this.innerHTML,1)">北京</a></ol>
+                     <ol><a href="javascript:void(0);" onclick="onc_selvalue(this.innerHTML,1)">上海</a></ol>
+                     <ol><a href="javascript:void(0);" onclick="onc_selvalue(this.innerHTML,1)">天津</a></ol>
+                     <ol><a href="javascript:void(0);" onclick="onc_selvalue(this.innerHTML,1)">广州</a></ol>
+                     <ol><a href="javascript:void(0);" onclick="onc_selvalue(this.innerHTML,1)">深圳</a></ol>
+                     
+                     <ol><a href="javascript:void(0);" onclick="onc_selvalue(this.innerHTML,1)">北京</a></ol>
+                     <ol><a href="javascript:void(0);" onclick="onc_selvalue(this.innerHTML,1)">上海</a></ol>
+                     <ol><a href="javascript:void(0);" onclick="onc_selvalue(this.innerHTML,1)">天津</a></ol>
+                     <ol><a href="javascript:void(0);" onclick="onc_selvalue(this.innerHTML,1)">广州</a></ol>
+                     
+                     <div class="clear"></div>
+                     <div class="olhr"></div>
+                     
+                     <ol>北京橙天嘉禾影城万柳店</ol>
+                     <ol>北京橙天嘉禾影城上地店</ol>
+                     
+                  </ul>
+               </div>
+               <div><img src="images/login_sel_apvbot.png" /></div>
+               
+        </div>
+            
+    </div>
+    
+    <div class="login_te02" style="z-index:900;">
+      <input id="sel02" class="login_select01"  value="购买套票" readonly="readonly" onclick="onc_loginapv(2)"/>
+      
+      <div class="login_liapv" id="login_liapv02" style="width:188px; display:none;">
+               <div class="login_liapv_te2" style="height:150px;">
+                  <ul>
+                     
+                     <ol><a onclick="onc_selvalue(this.innerHTML,2)" href="javascript:void(0);">30元</a></ol>
+                     <ol><a onclick="onc_selvalue(this.innerHTML,2)" href="javascript:void(0);">50元</a></ol>
+                     <ol><a onclick="onc_selvalue(this.innerHTML,2)" href="javascript:void(0);">100元</a></ol>
+                     <ol><a onclick="onc_selvalue(this.innerHTML,2)" href="javascript:void(0);">500元</a></ol>
+                     
+                     <ol><a onclick="onc_selvalue(this.innerHTML,2)" href="javascript:void(0);">30元</a></ol>
+                     <ol><a onclick="onc_selvalue(this.innerHTML,2)" href="javascript:void(0);">50元</a></ol>
+                     <ol><a onclick="onc_selvalue(this.innerHTML,2)" href="javascript:void(0);">100元</a></ol>
+                     <ol><a onclick="onc_selvalue(this.innerHTML,2)" href="javascript:void(0);">500元</a></ol>
+                     
+                  </ul>
+               </div>
+               <div><img src="images/login_sel_apvbot.png" /></div>
+               
+        </div>
+      
+    </div>
+    
+    <div class="login_te01">
+      <input type="button" class="login_btn02" />
+    </div>
+    
+</div>
+
+<!-- LOGIN END -->
+<!--  banner begin -->
+<DIV class="row-3">
+<span class="coin-byyb"><img src="images/ban_yyb.png" /></span>
+<span class="coin-byyr"><img src="images/ban_yyr.png" /></span>
+<!-- slider begin -->
+<DIV id="coin-slider">
+
+<div class="coin-slider-wrap"><IMG alt="" src="images/banner01.jpg"> 
+<SPAN><B>01</B> <STRONG><a href="#">美国梦工厂影片公司出品</a></STRONG> 铁甲钢拳 </SPAN> </div>
+
+<div class="coin-slider-wrap"><IMG alt="" src="images/banner02.jpg"> 
+<SPAN><B>02</B> <STRONG><a href="#">美国梦工厂影片公司出品</a></STRONG> 铁甲钢拳 </SPAN> </div>
+
+<div class="coin-slider-wrap"><IMG alt="" src="images/banner03.jpg"> 
+<SPAN><B>03</B> <STRONG><a href="#">美国梦工厂影片公司出品</a></STRONG> 铁甲钢拳 </SPAN> </div>
+
+<div class="coin-slider-wrap"><IMG alt="" src="images/banner04.jpg"> 
+<SPAN><B>04</B> <STRONG><a href="#">美国梦工厂影片公司出品</a></STRONG> 铁甲钢拳 </SPAN> </div>
+
+</DIV>
+<!-- slider end -->
+
+</DIV>
+<!--  banner end -->
+
+<!--  main center 层 START -->
+<div class="main_cen">
+
+    <div class="so_index">
+       <ul>
+       
+          <li>
+            <input id="so_sel01" type="text" class="so_select01" value="选择城市" readonly="readonly" onclick="onc_soapv(1,event)" />
+            <div class="so_liapv" id="so_liapv01" style=" width:136px; display:none;">
+               <div class="so_liapv_te">
+                  <ul>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,1,0)" href="javascript:void(0);">北京</a></ol>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,1,0)" href="javascript:void(0);">上海</a></ol>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,1,0)" href="javascript:void(0);">天津</a></ol>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,1,0)" href="javascript:void(0);">广州</a></ol>
+                  </ul>
+               </div>
+               <div class="so_liapv_botw"><div class="so_liapv_bot"></div></div>
+            </div>
+          </li>
+          
+          <li>
+            <input id="so_sel02" type="text" class="so_select02" value="选择影院" readonly="readonly" onclick="onc_soapv(2,event)" />
+            <div class="so_liapv" id="so_liapv02" style=" width:249px; display:none;">
+               <div class="so_liapv_te">
+                  <ul>
+                     <ol>北京影城<font>3</font>个</ol>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,2,0)" href="javascript:void(0);">嘉禾北京上地影城</a></ol>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,2,0)" href="javascript:void(0);">嘉禾北京万柳影城</a></ol>
+                  </ul>
+               </div>
+               <div class="so_liapv_botw"><div class="so_liapv_bot"></div></div>
+            </div>
+          </li>
+          
+          <li>
+            <input id="so_sel03" type="text" class="so_select03" value="选择时段" readonly="readonly" onclick="onc_soapv(3,event)" />
+            <div class="so_liapv" id="so_liapv03" style=" width:197px; display:none;">
+               <div class="so_liapv_te">
+                  <ul>
+                     <ol>
+                      <input type="radio" id="so_rad01" name="so_rad" value="今天" checked="checked" /> 今天 
+                      <input type="radio" id="so_rad02" name="so_rad" value="明天" /> 明天 
+                      <input type="radio" id="so_rad03" name="so_rad" value="后天" /> 后天 
+                     </ol>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,3,1)" href="javascript:void(0);">所有时段</a></ol>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,3,1)" href="javascript:void(0);">12点之前</a></ol>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,3,1)" href="javascript:void(0);">12:00-18:00</a></ol>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,3,1)" href="javascript:void(0);">18:00-20:00</a></ol>
+                  </ul>
+               </div>
+               <div class="so_liapv_botw"><div class="so_liapv_bot"></div></div>
+            </div>
+          </li>
+          
+          <li>
+            <input id="so_sel04" type="text" class="so_select04" value="选择分类" readonly="readonly" onclick="onc_soapv(4,event)" />
+            <div class="so_liapv" id="so_liapv04" style=" width:109px; display:none;">
+               <div class="so_liapv_te">
+                  <ul>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,4,0)" href="javascript:void(0);">所有分类</a></ol>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,4,0)" href="javascript:void(0);">动画</a></ol>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,4,0)" href="javascript:void(0);">悬疑</a></ol>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,4,0)" href="javascript:void(0);">枪战</a></ol>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,4,0)" href="javascript:void(0);">爱情</a></ol>
+                  </ul>
+               </div>
+               <div class="so_liapv_botw"><div class="so_liapv_bot"></div></div>
+            </div>
+          </li>
+          
+          <li><input type="text" id="keyw" class="so_input01" value="请输入关键词"  onfocus="onf_input3(this.id);" onblur="onb_input3(this.id)" /></li>
+          <li style="padding-top:3px;"><input type="button" class="btn_so"  /></li>
+       </ul>
+       <div class="clear"></div>
+    </div>
+    
+   <!-- 中间图层滑动区域 START --> 
+    <div class="mc_yid">
+           <div id="demo-outer">
+        <div id="wrapper">
+        </div>
+        <!-- Slider Outer Starts -->
+        <div id="slider-outer">
+            <!-- Slider Starts -->
+            <div id="slider">
+                <img class="scrollButtons left" src="images/login2_l.png" alt="" />
+                <!-- Scroll Starts Here -->
+                <div style="overflow: hidden;" class="scroll">
+                    <!-- Scroll Container Starts -->
+                    <div class="scrollContainer">
+                    
+                        <!-- Panel Starts -->
+                        <div class="panel" id="panel_1">
+                            <!-- Panel Inside Starts -->
+                            <div class="inside">
+                                <!-- Image Starts -->
+                                <a href="javascript:void(0);" class="inimg"><img src="images/scoll01.jpg" alt="" /></a>
+                                
+                                <div class="pan_text">
+                                  <a href="#">约里大冒险</a><span><a href="#" title="我要购票"><img src="images/buyico.gif" width="22" height="16" /></a></span>
+                                </div>
+                                <div class="pan_text pante_zi01">
+                                  英语[90分钟]<span>10月28日</span>
+                                </div>
+                                <div class="pan_xian"></div>
+                                <div class="pan_text pante_zi01">
+                                  主演：尼古拉思凯奇.詹姆斯...
+                                </div>
+                                
+                                <!-- Image Ends -->
+                            </div>
+                            <!-- Panel Inside Ends -->
+                        </div>
+                        <!-- Panel Ends -->
+                        
+                        <!-- Panel Starts -->
+                        <div class="panel" id="panel_2">
+                            <!-- Panel Inside Starts -->
+                            <div class="inside">
+                                <!-- Image Starts -->
+                                <a href="javascript:void(0);" class="inimg"><img src="images/scoll02.jpg" alt="" /></a>
+                                <div class="pan_text">
+                                 <a href="#">约里大冒险</a><span><a href="#" title="我要购票"><img src="images/buyico.gif" width="22" height="16" /></a></span>
+                                </div>
+                                <div class="pan_text pante_zi01">
+                                  英语[90分钟]<span>10月28日</span>
+                                </div>
+                                <div class="pan_xian"></div>
+                                <div class="pan_text pante_zi01">
+                                  主演：尼古拉思凯奇.詹姆斯...
+                                </div>
+                                <!-- Image Ends -->
+                            </div>
+                            <!-- Panel Inside Ends -->
+                        </div>
+                        <!-- Panel Ends -->
+                        
+                        <!-- Panel Starts -->
+                        <div class="panel" id="panel_3">
+                            <!-- Panel Inside Starts -->
+                            <div class="inside">
+                                <!-- Image Starts -->
+                                <a href="javascript:void(0);" class="inimg"><img src="images/scoll03.jpg" alt="" /></a>
+                                <div class="pan_text">
+                                  <a href="#">约里大冒险</a><span><a href="#" title="我要购票"><img src="images/buyico.gif" width="22" height="16" /></a></span>
+                                </div>
+                                <div class="pan_text pante_zi01">
+                                  英语[90分钟]<span>10月28日</span>
+                                </div>
+                                <div class="pan_xian"></div>
+                                <div class="pan_text pante_zi01">
+                                  主演：尼古拉思凯奇.詹姆斯...
+                                </div>
+                                <!-- Image Ends -->
+                            </div>
+                            <!-- Panel Inside Ends -->
+                        </div>
+                        <!-- Panel Ends -->
+                        
+                        <!-- Panel Starts -->
+                        <div class="panel" id="panel_4">
+                            <!-- Panel Inside Starts -->
+                            <div class="inside">
+                                <!-- Image Starts -->
+                                <a href="javascript:void(0);" class="inimg"><img src="images/scoll04.jpg" alt="" /></a>
+                                <div class="pan_text">
+                                  <a href="#">约里大冒险</a><span><a href="#" title="我要购票"><img src="images/buyico.gif" width="22" height="16" /></a></span>
+                                </div>
+                                <div class="pan_text pante_zi01">
+                                  英语[90分钟]<span>10月28日</span>
+                                </div>
+                                <div class="pan_xian"></div>
+                                <div class="pan_text pante_zi01">
+                                  主演：尼古拉思凯奇.詹姆斯...
+                                </div>
+                                <!-- Image Ends -->
+                            </div>
+                            <!-- Panel Inside Ends -->
+                        </div>
+                        <!-- Panel Ends -->
+                        
+                        <!-- Panel Starts -->
+                        <div class="panel" id="panel_5">
+                            <!-- Panel Inside Starts -->
+                            <div class="inside">
+                                <!-- Image Starts -->
+                                <a href="javascript:void(0);" class="inimg"><img src="images/scoll03.jpg" alt="" /></a>
+                                <div class="pan_text">
+                                  <a href="#">约里大冒险</a><span><a href="#" title="我要购票"><img src="images/buyico.gif" width="22" height="16" /></a></span>
+                                </div>
+                                <div class="pan_text pante_zi01">
+                                  英语[90分钟]<span>10月28日</span>
+                                </div>
+                                <div class="pan_xian"></div>
+                                <div class="pan_text pante_zi01">
+                                  主演：尼古拉思凯奇.詹姆斯...
+                                </div>
+                                <!-- Image Ends -->
+                            </div>
+                            <!-- Panel Inside Ends -->
+                        </div>
+                        <!-- Panel Ends -->
+                        
+                        <!-- Panel Starts -->
+                        <div class="panel" id="panel_6">
+                            <!-- Panel Inside Starts -->
+                            <div class="inside">
+                                <!-- Image Starts -->
+                                <a href="javascript:void(0);" class="inimg"><img src="images/scoll02.jpg" alt="" /></a>
+                                <div class="pan_text">
+                                  <a href="#">约里大冒险</a><span><a href="#" title="我要购票"><img src="images/buyico.gif" width="22" height="16" /></a></span>
+                                </div>
+                                <div class="pan_text pante_zi01">
+                                  英语[90分钟]<span>10月28日</span>
+                                </div>
+                                <div class="pan_xian"></div>
+                                <div class="pan_text pante_zi01">
+                                  主演：尼古拉思凯奇.詹姆斯...
+                                </div>
+                                <!-- Image Ends -->
+                            </div>
+                            <!-- Panel Inside Ends -->
+                        </div>
+                        <!-- Panel Ends -->
+                        
+                        <!-- Panel Starts -->
+                        <div class="panel" id="panel_7">
+                            <!-- Panel Inside Starts -->
+                            <div class="inside">
+                                <!-- Image Starts -->
+                                <a href="javascript:void(0);" class="inimg"><img src="images/scoll03.jpg" alt="" /></a>
+                                <div class="pan_text">
+                                  <a href="#">约里大冒险</a><span><a href="#" title="我要购票"><img src="images/buyico.gif" width="22" height="16" /></a></span>
+                                </div>
+                                <div class="pan_text pante_zi01">
+                                  英语[90分钟]<span>10月28日</span>
+                                </div>
+                                <div class="pan_xian"></div>
+                                <div class="pan_text pante_zi01">
+                                  主演：尼古拉思凯奇.詹姆斯...
+                                </div>
+                                <!-- Image Ends -->
+                            </div>
+                            <!-- Panel Inside Ends -->
+                        </div>
+                        <!-- Panel Ends -->
+                        
+                        <!-- Panel Starts -->
+                        <div class="panel" id="panel_8">
+                            <!-- Panel Inside Starts -->
+                            <div class="inside">
+                                <!-- Image Starts -->
+                                <a href="javascript:void(0);" class="inimg"><img src="images/scoll04.jpg" alt="" /></a>
+                                <div class="pan_text">
+                                  <a href="#">约里大冒险</a><span><a href="#" title="我要购票"><img src="images/buyico.gif" width="22" height="16" /></a></span>
+                                </div>
+                                <div class="pan_text pante_zi01">
+                                  英语[90分钟]<span>10月28日</span>
+                                </div>
+                                <div class="pan_xian"></div>
+                                <div class="pan_text pante_zi01">
+                                  主演：尼古拉思凯奇.詹姆斯...
+                                </div>
+                                <!-- Image Ends -->
+                            </div>
+                            <!-- Panel Inside Ends -->
+                        </div>
+                        <!-- Panel Ends -->
+                        
+                        <!-- Panel Starts -->
+                        <div class="panel" id="panel_9">
+                            <!-- Panel Inside Starts -->
+                            <div class="inside">
+                                <!-- Image Starts -->
+                                <a href="javascript:void(0);" class="inimg"><img src="images/scoll01.jpg" alt="" /></a>
+                                <div class="pan_text">
+                                  <a href="#">约里大冒险</a><span><a href="#" title="我要购票"><img src="images/buyico.gif" width="22" height="16" /></a></span>
+                                </div>
+                                <div class="pan_text pante_zi01">
+                                  英语[90分钟]<span>10月28日</span>
+                                </div>
+                                <div class="pan_xian"></div>
+                                <div class="pan_text pante_zi01">
+                                  主演：尼古拉思凯奇.詹姆斯...
+                                </div>
+                                <!-- Image Ends -->
+                            </div>
+                            <!-- Panel Inside Ends -->
+                        </div>
+                        <!-- Panel Ends -->
+                        
+                        <!-- Panel Starts -->
+                        <div class="panel" id="panel_10">
+                            <!-- Panel Inside Starts -->
+                            <div class="inside">
+                                <!-- Image Starts -->
+                                <a href="javascript:void(0);" class="inimg"><img src="images/scoll02.jpg" alt="" /></a>
+                                <div class="pan_text">
+                                  <a href="#">约里大冒险</a><span><a href="#" title="我要购票"><img src="images/buyico.gif" width="22" height="16" /></a></span>
+                                </div>
+                                <div class="pan_text pante_zi01">
+                                  英语[90分钟]<span>10月28日</span>
+                                </div>
+                                <div class="pan_xian"></div>
+                                <div class="pan_text pante_zi01">
+                                  主演：尼古拉思凯奇.詹姆斯...
+                                </div>
+                                <!-- Image Ends -->
+                            </div>
+                            <!-- Panel Inside Ends -->
+                        </div>
+                        <!-- Panel Ends -->
+
+                    </div>
+                    <!-- SCroll Container Ends -->
+                </div>
+                <!-- Scroll Ends Here -->
+                <img class="scrollButtons right" src="images/login2_r.png" alt="right" />
+            </div>
+            <!-- Slider Ends -->
+        </div>
+        <!-- Slider Outer Ends -->
+    </div>
+        
+    </div>
+   <!-- 中间图层滑动区域 END -->  
+   
+</div>
+<div class="main_cbyy"><img src="images/main_cenbotyy.png" /></div>
+<!--  main center 层 END -->
+
+<!--  main bot start -->
+
+<div class="clear"></div>
+<div class="main_bot">
+   <ul>
+      <li><img onclick="onc_btnsm(542,600,'win','overlay','close')" src="images/m03_xtu08.jpg" /></li>
+      <li><img onclick="onc_btnsm(542,600,'win','overlay','close')" src="images/m03_xtu09.jpg" /></li>
+      <li><img onclick="onc_btnsm(542,600,'win','overlay','close')" src="images/m03_xtu10.jpg" /></li>
+      <li><img onclick="onc_btnsm(542,600,'win','overlay','close')" src="images/m03_xtu06.jpg" /></li>
+      <li><img onclick="onc_btnsm(542,600,'win','overlay','close')" src="images/m03_xtu01.jpg" /></li>
+      
+      <li><img onclick="onc_btnsm(542,600,'win','overlay','close')" src="images/m03_xtu06.jpg" /></li>
+      <li><img onclick="onc_btnsm(542,600,'win','overlay','close')" src="images/m03_xtu01.jpg" /></li>
+      <li><img onclick="onc_btnsm(542,600,'win','overlay','close')" src="images/m03_xtu08.jpg" /></li>
+      <li><img onclick="onc_btnsm(542,600,'win','overlay','close')" src="images/m03_xtu09.jpg" /></li>
+      <li><img onclick="onc_btnsm(542,600,'win','overlay','close')" src="images/m03_xtu10.jpg" /></li>
+   </ul>
+   <div class="clear"></div>
+</div>
+<!--  main bot END -->
+
+  <div class="bottom"> 
+   <span><img src="images/bottombg.png" /></span>
+<a href="#">关于我们</a> | <a href="#">商业合作</a> | <a href="#">版权声明</a> | <a href="#">招聘信息</a> | <a href="#">联系方式</a> <br/>
+    COPYRIGHT2006-2011 橙天娱乐嘉禾集团（国际）控股有限公司   京ICP备06040851号 
+  </div>
+
+
+
+</div>
+<!--  弹出层 S -->
+<div id="overlay"></div>
+
+<div id="win">
+<h2><img id="close" src="images/m02c_close.gif" /><span><a href="javascript:void(0);" title="我要购票"><img src="images/tc_buy.gif" /></a></span></h2>
+<h4><a href="javascript:void(0);">猩球崛起 <font style="font-size:16px; font-weight:normal;" class="endi">Rise of the Planet of the Apes(2011)</font></a></h4>
+<div class="win_tuij">
+<a href="javascript:void(0);"><img src="images/win_tu01.gif"></a>
+<a href="javascript:void(0);"><img src="images/win_tu02.gif"></a>
+<a href="javascript:void(0);"><img src="images/win_tu03.gif"></a>
+</div>
+
+  <div class="win_text">
+     <h3>影片简介 Film Details</h3>
+     <p>
+       影片讲述了在2020年，人类拳击被政府取缔，只有机器人的拳击赛才合法。休·杰克曼在片中出演一位前拳击手查理，在退出拳坛后从事机器人格斗。在一次跟他的机器人"伏击"（Ambush)在一场机器人VS斗牛比赛中，因为疏忽而被RICKY的斗牛"黑色雷鸣"（Black Thunder）击败。他也欠下RICKY两万美金，落荒而逃。
+     </p>
+     <hr style="width:500px; margin:0 auto;">
+     <h3>中国大陆</h3>
+     
+     <div class="wint_diqu">
+        <ul>
+          <li><b>北京</b></li>
+          <li><a href="javascript:void(0);">重庆</a></li>
+          <li><a href="javascript:void(0);">广州</a></li>
+          <li><a href="javascript:void(0);">深圳</a></li>
+          <li><a href="javascript:void(0);">重庆</a></li>
+          <li><a href="javascript:void(0);">齐齐哈尔</a></li>
+          <li><a href="javascript:void(0);">深圳</a></li>
+          <li><a href="javascript:void(0);">景德镇</a></li>
+          <li><a href="javascript:void(0);">北京</a></li>
+          <li><a href="javascript:void(0);">江西</a></li>
+          
+          <li><a href="javascript:void(0);">广州</a></li>
+          <li><a href="javascript:void(0);">齐齐哈尔</a></li>
+          <li><a href="javascript:void(0);">广州</a></li>
+          <li><a href="javascript:void(0);">上海</a></li>
+          <li><a href="javascript:void(0);">广州</a></li>
+          <li><a href="javascript:void(0);">上海</a></li>
+          <li><a href="javascript:void(0);">北京</a></li>
+          <li><a href="javascript:void(0);">江西</a></li>
+          
+          <li><a href="javascript:void(0);">上海</a></li>
+          <li><a href="javascript:void(0);">北京</a></li>
+          <li><a href="javascript:void(0);">景德镇</a></li>
+          
+        </ul>
+     </div>
+     
+     <hr style="width:430px; margin:0 auto;">
+     
+     <div class="wint_dian">
+        <ul>
+          <li><a href="javascript:void(0);">北京橙天嘉禾影城万柳店</a></li>
+          <li><a href="javascript:void(0);">北京橙天嘉禾影城上地店</a></li>
+        </ul>
+     </div>
+     
+  </div>
+
+</div>
+<!--  弹出层 O -->
+</body>
+</html>

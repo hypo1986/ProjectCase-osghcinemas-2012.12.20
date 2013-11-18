@@ -1,0 +1,427 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>橙天嘉禾影城</title>
+
+<link rel="stylesheet" type="text/css" href="css/css.css" />
+<SCRIPT type=text/javascript src="js/jquery-1.7.js"></SCRIPT>
+<SCRIPT type=text/javascript src="js/script.js"></SCRIPT>
+</head>
+
+<body>
+<div class="b_wrap02">
+
+
+<!-- HEAD STAR -->
+<div class="head_apv02">
+
+   <div class="head_apvright">
+      <ul>
+          <li><a href="#" class="dh_li01" title="帮助指南"><img src="images/dh05.png" /></a></li>
+          <li><a href="fy_影城页.html" class="dh_li01" title="嘉禾影城"><img src="images/dh04.png" /></a></li>
+          <li><a href="fy_time01.html" class="dh_li01" title="影片排期"><img src="images/dh03.png" /></a></li>
+          <li><a href="fy_time02.html" class="dh_li02" title="新片上映"><img src="images/dh02.png" /></a></li>
+          <li><a href="index.html" class="dh_li01" title="影城首页"><img src="images/dh01.png" /></a></li>
+      </ul>
+   </div>
+   <div class="head_apvleft_left">
+       <ul>
+          <li class="head_apvll_li01"> &nbsp; 首 页</li>
+          <li>放映时间</li>
+       </ul>
+   </div>
+   <div class="head_apvleft">
+      <b>我在北京</b> <a href="#"><img src="images/arrow_up.png" /></a>  
+   </div>
+   
+</div>
+<!-- HEAD END -->
+<div class="login02">
+  <a href="#"><img src="images/login02.png" /></a> <span> [ <a href="#" class="gly">管理员</a> ]&nbsp; <a href="#">注销</a> </span>
+</div>
+<!--  二级页 MAIN START -->
+
+<div class="main02">
+
+    <div class="fylist_menu">
+       <ul>
+          <li class="fylist_mli01">正在热映(12)</li>
+          <li class="fylist_mli02">即将上映(15)</li>
+          <li class="fylist_mli03">嘉禾电影(506)</li>
+       </ul>
+    </div>
+    <div class="fylist_so">
+       <ul>
+       
+          <li>
+            <input id="so_sel01" type="text" class="so_select01" value="选择城市" readonly="readonly" onclick="onc_soapv(1)" />
+            <div class="so_liapv" id="so_liapv01" style=" width:136px; display:none;">
+               <div class="so_liapv_te">
+                  <ul>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,1,0)" href="javascript:void(0);">北京</a></ol>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,1,0)" href="javascript:void(0);">上海</a></ol>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,1,0)" href="javascript:void(0);">天津</a></ol>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,1,0)" href="javascript:void(0);">广州</a></ol>
+                  </ul>
+               </div>
+               <div class="so_liapv_botw"><div class="so_liapv_bot"></div></div>
+            </div>
+          </li>
+          
+          <li>
+            <input id="so_sel02" type="text" class="so_select02" value="选择影院" readonly="readonly" onclick="onc_soapv(2)" />
+            <div class="so_liapv" id="so_liapv02" style=" width:249px; display:none;">
+               <div class="so_liapv_te">
+                  <ul>
+                     <ol>北京影城<font>3</font>个</ol>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,2,0)" href="javascript:void(0);">嘉禾北京上地影城</a></ol>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,2,0)" href="javascript:void(0);">嘉禾北京万柳影城</a></ol>
+                  </ul>
+               </div>
+               <div class="so_liapv_botw"><div class="so_liapv_bot"></div></div>
+            </div>
+          </li>
+          
+          <li>
+            <input id="so_sel03" type="text" class="so_select03" value="选择时段" readonly="readonly" onclick="onc_soapv(3)" />
+            <div class="so_liapv" id="so_liapv03" style=" width:197px; display:none;">
+               <div class="so_liapv_te">
+                  <ul>
+                     <ol>
+                      <input type="radio" id="so_rad01" name="so_rad" value="今天" checked="checked" /> 今天 
+                      <input type="radio" id="so_rad02" name="so_rad" value="明天" /> 明天 
+                      <input type="radio" id="so_rad03" name="so_rad" value="后天" /> 后天 
+                     </ol>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,3,1)" href="javascript:void(0);">所有时段</a></ol>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,3,1)" href="javascript:void(0);">12点之前</a></ol>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,3,1)" href="javascript:void(0);">12:00-18:00</a></ol>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,3,1)" href="javascript:void(0);">18:00-20:00</a></ol>
+                  </ul>
+               </div>
+               <div class="so_liapv_botw"><div class="so_liapv_bot"></div></div>
+            </div>
+          </li>
+          
+          <li>
+            <input id="so_sel04" type="text" class="so_select04" value="选择分类" readonly="readonly" onclick="onc_soapv(4)" />
+            <div class="so_liapv" id="so_liapv04" style=" width:109px; display:none;">
+               <div class="so_liapv_te">
+                  <ul>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,4,0)" href="javascript:void(0);">所有分类</a></ol>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,4,0)" href="javascript:void(0);">动画</a></ol>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,4,0)" href="javascript:void(0);">悬疑</a></ol>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,4,0)" href="javascript:void(0);">枪战</a></ol>
+                     <ol><a onclick="onc_sovalue(this.innerHTML,4,0)" href="javascript:void(0);">爱情</a></ol>
+                  </ul>
+               </div>
+               <div class="so_liapv_botw"><div class="so_liapv_bot"></div></div>
+            </div>
+          </li>
+          
+          <li><input type="text" id="keyw" class="so_input01" value="请输入关键词"  onfocus="onf_input3(this.id);" onblur="onb_input3(this.id)" /></li>
+          <li><input type="button" class="btn_so2"  /></li>
+       </ul>
+       <div class="clear"></div>
+    </div>
+    
+    <div class="fylist_main" style="positino:relative">
+        <!--  列表右侧层 START  -->
+        <div class="fylist_mright">
+           <!--  浮层 外层定位 START -->
+           <div id="fylt_apvwrap" class="fylt_apvwrap">
+               <!-- 浮层 START -->
+               <div id="fylt_apv01" class="fylist_mltapv" style="display:none;">
+                  <div><img src="images/fylist_apvtop.png" /></div>
+                   <h4><a href="#"><font>铁甲钢拳1</font></a> <img src="images/m02c_close.gif" onclick="onc_hiddenm02c(1)" /></h4>
+                  <div id="fylt_apvw01" class="fylt_apvw"> 
+                   <div class="fmltapv_jj">
+                     <img src="images/fylist_apvtu01.gif" />
+                     <h3>铁甲钢拳 Real Steel（2011）</h3>
+                     <b>片长：</b>120分钟 <br/>
+                     <b>语言：</b>英语 <br/>
+                     <b>类型：</b>动作 <br/>
+                     <b>国家：</b>美国 <br/>
+                   </div>
+                   <div class="fmltapv_jj">
+                     <b>导演：</b>肖恩·利维  <br/>
+                     <b>主演：</b>休·杰克曼、伊万杰琳·莉莉、凯文·杜兰
+                   </div>
+
+                   <h5><b>影片介绍</b></h5>
+                   <p>
+                     影片讲述了在2020年，人类拳击被政府取缔，只有机器人的拳击赛才合法。休·杰克曼在片中出演一位前拳击手查理，在退出拳坛后从事机器人格斗。在一次跟他的机器人"伏击"（Ambush)在一场机器人VS斗牛比赛中，因为疏忽而被RICKY的斗牛"黑色雷鸣"（Black Thunder）击败。他也欠下RICKY两万美金，落荒而逃。
+                   </p>
+                   <h5 style="text-align:right;"><b>嘉禾出品发行</b></h5>
+                   
+                   <div class="fmltapv_jj02"><img src="images/fylist_apvico3.gif" /></div>
+                   <div class="fmltapv_jj03"><b>在下方选择影院</b></div>
+                   <div class="fmltapv_jj04">
+                     <a href="#">海淀区1</a> <a href="#" class="fyeli02">朝阳区</a>  <a href="#">西城区</a> <a href="#">东城区</a> <br/>
+                     <a href="#">西城区</a> <a href="#">东城区</a> <a href="#">朝阳区</a>
+                   </div>
+                   <div class="fmltapv_jj05">
+                     嘉禾上地影院  |  嘉禾万柳影院 <br/>
+                     嘉禾万柳影院  |  嘉禾朝阳区大望路影院
+                   </div>
+                   <div style="padding-left:10px;">
+                    <a href="#"><img class="fylist_timgb" src="images/fylist_apvbtu.gif" /></a>
+                   </div>
+                  </div>
+                  <div><img src="images/fylist_apvbot.png" /></div>
+               </div>
+               <!-- 浮层 END -->
+              <!-- 浮层 START -->
+               <div id="fylt_apv02" class="fylist_mltapv" style="display:none;">
+                  <div><img src="images/fylist_apvtop.png" /></div>
+                   <h4><a href="#"><font>铁甲钢拳2</font></a> <img src="images/m02c_close.gif" onclick="onc_hiddenm02c(2)" /></h4>
+                  <div id="fylt_apvw02" class="fylt_apvw"> 
+                   <div class="fmltapv_jj">
+                     <img src="images/fylist_apvtu01.gif" />
+                     <h3>铁甲钢拳 Real Steel（2011）</h3>
+                     <b>片长：</b>120分钟 <br/>
+                     <b>语言：</b>英语 <br/>
+                     <b>类型：</b>动作 <br/>
+                     <b>国家：</b>美国 <br/>
+                   </div>
+                   <div class="fmltapv_jj">
+                     <b>导演：</b>肖恩·利维  <br/>
+                     <b>主演：</b>休·杰克曼、伊万杰琳·莉莉、凯文·杜兰
+                   </div>
+
+                   <h5><b>影片介绍</b></h5>
+                   <p>
+                     影片讲述了在2020年，人类拳击被政府取缔，只有机器人的拳击赛才合法。休·杰克曼在片中出演一位前拳击手查理，在退出拳坛后从事机器人格斗。在一次跟他的机器人"伏击"（Ambush)在一场机器人VS斗牛比赛中，因为疏忽而被RICKY的斗牛"黑色雷鸣"（Black Thunder）击败。他也欠下RICKY两万美金，落荒而逃。
+                   </p>
+                   <h5 style="text-align:right;"><b>嘉禾出品发行</b></h5>
+                   
+                   <div class="fmltapv_jj02"><img src="images/fylist_apvico3.gif" /></div>
+                   <div class="fmltapv_jj03"><b>我在北京</b> <img src="images/fylist_apvico2.gif" /></div>
+                   <div class="fmltapv_jj04">
+                     <a href="#">海淀区1</a> <a href="#" class="fyeli02">朝阳区</a>  <a href="#">西城区</a> <a href="#">东城区</a> <br/>
+                     <a href="#">西城区</a> <a href="#">东城区</a> <a href="#">朝阳区</a>
+                   </div>
+                   <div class="fmltapv_jj05">
+                     嘉禾上地影院  |  嘉禾万柳影院 <br/>
+                     嘉禾万柳影院  |  嘉禾朝阳区大望路影院
+                   </div>
+                   <div style="padding-left:10px;">
+                     <a href="#"><img class="fylist_timgb" src="images/fylist_apvbtu.gif" /></a>
+                   </div>
+                  </div>
+                  <div><img src="images/fylist_apvbot.png" /></div>
+               </div>
+               <!-- 浮层 END -->
+               <!-- 浮层 START -->
+               <div id="fylt_apv03" class="fylist_mltapv" style="display:none;">
+                  <div><img src="images/fylist_apvtop.png" /></div>
+                   <h4><a href="#"><font>铁甲钢拳3</font></a> <img src="images/m02c_close.gif" onclick="onc_hiddenm02c(3)" /></h4>
+                  <div id="fylt_apvw03" class="fylt_apvw"> 
+                   <div class="fmltapv_jj">
+                     <img src="images/fylist_apvtu01.gif" />
+                     <h3>铁甲钢拳 Real Steel（2011）</h3>
+                     <b>片长：</b>120分钟 <br/>
+                     <b>语言：</b>英语 <br/>
+                     <b>类型：</b>动作 <br/>
+                     <b>国家：</b>美国 <br/>
+                   </div>
+                   <div class="fmltapv_jj">
+                     <b>导演：</b>肖恩·利维  <br/>
+                     <b>主演：</b>休·杰克曼、伊万杰琳·莉莉、凯文·杜兰
+                   </div>
+
+                   <h5><b>影片介绍</b></h5>
+                   <p>
+                     影片讲述了在2020年，人类拳击被政府取缔，只有机器人的拳击赛才合法。休·杰克曼在片中出演一位前拳击手查理，在退出拳坛后从事机器人格斗。在一次跟他的机器人"伏击"（Ambush)在一场机器人VS斗牛比赛中，因为疏忽而被RICKY的斗牛"黑色雷鸣"（Black Thunder）击败。他也欠下RICKY两万美金，落荒而逃。
+                   </p>
+                   <h5 style="text-align:right;"><b>嘉禾出品发行</b></h5>
+                   
+                   <div class="fmltapv_jj02"><img src="images/fylist_apvico3.gif" /></div>
+                   <div class="fmltapv_jj03"><b>我在北京</b> <img src="images/fylist_apvico2.gif" /></div>
+                   <div class="fmltapv_jj04">
+                     <a href="#">海淀区1</a> <a href="#" class="fyeli02">朝阳区</a>  <a href="#">西城区</a> <a href="#">东城区</a> <br/>
+                     <a href="#">西城区</a> <a href="#">东城区</a> <a href="#">朝阳区</a>
+                   </div>
+                   <div class="fmltapv_jj05">
+                     嘉禾上地影院  |  嘉禾万柳影院 <br/>
+                     嘉禾万柳影院  |  嘉禾朝阳区大望路影院
+                   </div>
+                   <div style="padding-left:10px;">
+                    <a href="#"><img class="fylist_timgb" src="images/fylist_apvbtu.gif" /></a>
+                   </div>
+                  </div>
+                  <div><img src="images/fylist_apvbot.png" /></div>
+               </div>
+               <!-- 浮层 END -->
+               <!-- 浮层 START -->
+               <div id="fylt_apv04" class="fylist_mltapv" style="display:none;">
+                  <div><img src="images/fylist_apvtop.png" /></div>
+                   <h4><a href="#"><font>铁甲钢拳4</font></a> <img src="images/m02c_close.gif" onclick="onc_hiddenm02c(4)" /></h4>
+                  <div id="fylt_apvw04" class="fylt_apvw"> 
+                   <div class="fmltapv_jj">
+                     <img src="images/fylist_apvtu01.gif" />
+                     <h3>铁甲钢拳 Real Steel（2011）</h3>
+                     <b>片长：</b>120分钟 <br/>
+                     <b>语言：</b>英语 <br/>
+                     <b>类型：</b>动作 <br/>
+                     <b>国家：</b>美国 <br/>
+                   </div>
+                   <div class="fmltapv_jj">
+                     <b>导演：</b>肖恩·利维  <br/>
+                     <b>主演：</b>休·杰克曼、伊万杰琳·莉莉、凯文·杜兰
+                   </div>
+
+                   <h5><b>影片介绍</b></h5>
+                   <p>
+                     影片讲述了在2020年，人类拳击被政府取缔，只有机器人的拳击赛才合法。休·杰克曼在片中出演一位前拳击手查理，在退出拳坛后从事机器人格斗。在一次跟他的机器人"伏击"（Ambush)在一场机器人VS斗牛比赛中，因为疏忽而被RICKY的斗牛"黑色雷鸣"（Black Thunder）击败。他也欠下RICKY两万美金，落荒而逃。
+                   </p>
+                   <h5 style="text-align:right;"><b>嘉禾出品发行</b></h5>
+                   
+                   <div class="fmltapv_jj02"><img src="images/fylist_apvico3.gif" /></div>
+                   <div class="fmltapv_jj03"><b>我在北京</b> <img src="images/fylist_apvico2.gif" /></div>
+                   <div class="fmltapv_jj04">
+                     <a href="#">海淀区1</a> <a href="#" class="fyeli02">朝阳区</a>  <a href="#">西城区</a> <a href="#">东城区</a> <br/>
+                     <a href="#">西城区</a> <a href="#">东城区</a> <a href="#">朝阳区</a>
+                   </div>
+                   <div class="fmltapv_jj05">
+                     嘉禾上地影院  |  嘉禾万柳影院 <br/>
+                     嘉禾万柳影院  |  嘉禾朝阳区大望路影院
+                   </div>
+                   <div style="padding-left:10px;">
+                    <a href="#"><img class="fylist_timgb" src="images/fylist_apvbtu.gif" /></a>
+                   </div>
+                  </div>
+                  <div><img src="images/fylist_apvbot.png" /></div>
+               </div>
+               <!-- 浮层 END -->
+               
+            </div>
+           <!--  浮层 外层定位 END -->
+           <div class="fylist_mrtext">
+             <a href="#"><img src="images/fylist_rtu01.gif" /></a><br/>
+             <h4>导演： 肖恩·利维 主演： 肖恩·利维</h4>
+             <p>铁甲钢拳围绕未来世界的机器人拳击比赛，讲述了一个饱含动作、梦想与亲情的励志故事。</p>
+           </div>
+           
+           <div class="fylist_mrtext">
+             <a href="#"><img src="images/fylist_rtu02.gif" /></a><br/>
+             <h4>导演： 肖恩·利维 主演： 肖恩·利维</h4>
+             <p>铁甲钢拳围绕未来世界的机器人拳击比赛，讲述了一个饱含动作、梦想与亲情的励志故事。</p>
+           </div>
+           
+           <div class="fylist_mrtext">
+             <a href="#"><img src="images/fylist_rtu03.gif" /></a><br/>
+             <h4>导演： 肖恩·利维 主演： 肖恩·利维</h4>
+             <p>铁甲钢拳围绕未来世界的机器人拳击比赛，讲述了一个饱含动作、梦想与亲情的励志故事。</p>
+           </div>
+           
+        </div>
+       <!--  列表右侧层 END  -->
+
+       <!--  列表左侧 START  -->
+        <div  class="fylist_mleft">
+          <div><img src="images/fylist_ltop.jpg" /></div>
+          
+          <!--  列表左侧 list START  -->
+           <div id="fylt_cw01" class="fylist_mltext" onclick="onm_showm02c(1)">
+               <a href="#"><img src="images/fylist_tu01.gif" class="timg" /></a>
+               <h4><a href="#">铁甲钢拳 Real Steel (2011)</a></h4>
+               <b>导演：</b> 肖恩·利维<br/>
+               <b>主演：</b> 休·杰克曼、伊万杰琳·莉莉、凯文·杜兰<br/>
+               <p>
+               铁甲钢拳围绕未来世界的机器人拳击比赛，讲述了一个饱含动作、梦想与亲情的励志故事。铁甲钢拳围绕未来世界的机器人拳击比赛，讲述了一个饱含动作、梦想与亲情的励志故事。一个饱含动作、梦想与亲情的励志故事、梦想与亲情的励志故事。
+               </p>
+               <b>嘉禾影院上地店：</b> <a href="#">11:35</a> | <a href="#">11:35</a> | <a href="#">11:35</a> | <a href="#">11:35</a> | <a href="#">11:35</a> ... <br/>
+               <b>嘉禾影院万柳店：</b> <a href="#">11:35</a> | <a href="#">11:35</a> | <a href="#">11:35</a> | <a href="#">11:35</a> | <a href="#">11:35</a> ... <br/>
+               <b>上映日期：</b> 2011年11月9日
+               <span>
+               <a href="#" title="放映时间"><img src="images/fylist_time.png" /></a> 
+               <a href="#" title="我要购票"><img src="images/fylist_buy.png" /></a>
+               </span>
+               
+               <div class="clear"></div>
+           </div>
+           <!--  列表左侧 list end  -->
+           <!--  列表左侧 list START  -->
+           <div id="fylt_cw02" class="fylist_mltext" onclick="onm_showm02c(2)">
+               <a href="#"><img src="images/fylist_tu02.gif" class="timg" /></a>
+               <h4><a href="#">铁甲钢拳 Real Steel (2011)</a></h4>
+               <b>导演：</b> 肖恩·利维<br/>
+               <b>主演：</b> 休·杰克曼、伊万杰琳·莉莉、凯文·杜兰<br/>
+               <p>
+               铁甲钢拳围绕未来世界的机器人拳击比赛，讲述了一个饱含动作、梦想与亲情的励志故事。铁甲钢拳围绕未来世界的机器人拳击比赛，讲述了一个饱含动作、梦想与亲情的励志故事。一个饱含动作、梦想与亲情的励志故事、梦想与亲情的励志故事。
+               </p>
+               <b>嘉禾影院上地店：</b> <a href="#">11:35</a> | <a href="#">11:35</a> | <a href="#">11:35</a> | <a href="#">11:35</a> | <a href="#">11:35</a> ... <br/>
+               <b>嘉禾影院万柳店：</b> <a href="#">11:35</a> | <a href="#">11:35</a> | <a href="#">11:35</a> | <a href="#">11:35</a> | <a href="#">11:35</a> ... <br/>
+               <b>上映日期：</b> 2011年11月9日
+               <span>
+               <a href="#" title="放映时间"><img src="images/fylist_time.png" /></a> 
+               <a href="#" title="我要购票"><img src="images/fylist_buy.png" /></a>
+               </span>
+              
+               <div class="clear"></div>
+           </div>
+           <!--  列表左侧 list end  -->
+           <!--  列表左侧 list START  -->
+           <div id="fylt_cw03" class="fylist_mltext" onclick="onm_showm02c(3)">
+               <a href="#"><img src="images/fylist_tu03.gif" class="timg" /></a>
+               <h4><a href="#">铁甲钢拳 Real Steel (2011)</a></h4>
+               <b>导演：</b> 肖恩·利维<br/>
+               <b>主演：</b> 休·杰克曼、伊万杰琳·莉莉、凯文·杜兰<br/>
+               <p>
+               铁甲钢拳围绕未来世界的机器人拳击比赛，讲述了一个饱含动作、梦想与亲情的励志故事。铁甲钢拳围绕未来世界的机器人拳击比赛，讲述了一个饱含动作、梦想与亲情的励志故事。一个饱含动作、梦想与亲情的励志故事、梦想与亲情的励志故事。
+               </p>
+               <b>嘉禾影院上地店：</b> 11:35 | 12:55 | 11:35 | 12:55 | 12:55 ... <br/>
+               <b>嘉禾影院万柳店：</b> 11:35 | 12:55 | 11:35 | 12:55 | 12:55 ... <br/>
+               <b>上映日期：</b> 2011年11月9日
+               <span>
+               <a href="#" title="放映时间"><img src="images/fylist_time.png" /></a> 
+               <a href="#" title="我要购票"><img src="images/fylist_buy.png" /></a>
+               </span>
+               
+               <div class="clear"></div>
+           </div>
+           <!--  列表左侧 list end  -->
+           <!--  列表左侧 list START  -->
+           <div id="fylt_cw04" class="fylist_mltext" onclick="onm_showm02c(4)">
+               <a href="#"><img src="images/fylist_tu04.gif" class="timg" /></a>
+               <h4><a href="#">铁甲钢拳 Real Steel (2011)</a></h4>
+               <b>导演：</b> 肖恩·利维<br/>
+               <b>主演：</b> 休·杰克曼、伊万杰琳·莉莉、凯文·杜兰<br/>
+               <p>
+               铁甲钢拳围绕未来世界的机器人拳击比赛，讲述了一个饱含动作、梦想与亲情的励志故事。铁甲钢拳围绕未来世界的机器人拳击比赛，讲述了一个饱含动作、梦想与亲情的励志故事。一个饱含动作、梦想与亲情的励志故事、梦想与亲情的励志故事。
+               </p>
+               <b>嘉禾影院上地店：</b> <a href="#">11:35</a> | <a href="#">11:35</a> | <a href="#">11:35</a> | <a href="#">11:35</a> | <a href="#">11:35</a> ... <br/>
+               <b>嘉禾影院万柳店：</b> <a href="#">11:35</a> | <a href="#">11:35</a> | <a href="#">11:35</a> | <a href="#">11:35</a> | <a href="#">11:35</a> ... <br/>
+               <b>上映日期：</b> 2011年11月9日
+               <span>
+               <a href="#" title="放映时间"><img src="images/fylist_time.png" /></a> 
+               <a href="#" title="我要购票"><img src="images/fylist_buy.png" /></a>
+               </span>
+               
+               <div class="clear"></div>
+           </div>
+           <!--  列表左侧 list end  -->
+           
+           <div class="fylist_loading"><img src="images/loading.gif" /></div>
+            
+           <div><img src="images/fylist_lbot.jpg" /></div>
+        </div>
+       <!--  列表左侧 END  -->
+       
+   
+    </div>
+   
+</div>
+<!--  二级页 MAIN END -->
+
+
+<div class="bottom">
+    <a href="#">关于我们</a> | <a href="#">项目合作</a> | <a href="#">版权声明</a> | <a href="#">招聘信息</a> | <a href="#">联系方式</a>
+    <br/>copyright2006-2011 橙天娱乐嘉禾集团（国际）控股有限公司   京ICP备06040851号
+</div>
+
+</div>
+
+</body>
+</html>

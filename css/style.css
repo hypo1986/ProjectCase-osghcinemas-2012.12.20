@@ -1,0 +1,61 @@
+* {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+
+BODY {
+	LINE-HEIGHT: 1.12em; FONT-FAMILY: Arial, Helvetica, sans-serif;  COLOR: #999898; FONT-SIZE: 100%
+}
+
+
+
+/*banner 层样式*/
+.row-3 {
+	POSITION: relative; BACKGROUND: #000;MARGIN: 0px auto; WIDTH: 1000px; HEIGHT: 594px; OVERFLOW: hidden
+}
+.coin-slider {
+	POSITION: relative; OVERFLOW: hidden
+}
+.coin-slider A {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: medium; BORDER-TOP: medium none; BORDER-RIGHT: medium none; TEXT-DECORATION: none
+}
+.cs-buttons {
+	Z-INDEX: 10; POSITION: absolute; PADDING-BOTTOM: 0px; PADDING-LEFT: 20px; WIDTH: 194px; BOTTOM: 0px; PADDING-RIGHT: 0px; DISPLAY: block; BACKGROUND: url(../image/coin-slide-title.png); HEIGHT: 40px; RIGHT: 0px; PADDING-TOP: 28px;
+	border:#F00 solid 1px;
+}
+.cs-buttons A {
+	TEXT-INDENT: -1000px; WIDTH: 15px; BACKGROUND: url(../image/cs-button1.png) no-repeat 0px 0px; FLOAT: left; HEIGHT: 15px; MARGIN-LEFT: 4px
+}
+.cs-buttons A:hover {
+	BACKGROUND: url(../image/cs-button2.png) no-repeat 0px 0px
+}
+.cs-buttons A.cs-active {
+	BACKGROUND: url(../image/cs-button2.png) no-repeat 0px 0px
+}
+.cs-title {
+	PADDING-BOTTOM: 14px; TEXT-TRANSFORM: uppercase; PADDING-LEFT: 32px; WIDTH: 407px; PADDING-RIGHT: 0px; BACKGROUND: url(../image/coin-slide-title.png); COLOR: #fff; FONT-WEIGHT: bold; WORD-SPACING: 3px; PADDING-TOP: 14px
+}
+.cs-title SPAN {
+	COLOR: #fff
+}
+.cs-title STRONG {
+	LINE-HEIGHT: 1.2em; TEXT-TRANSFORM: none; DISPLAY: block; FONT-SIZE: 18px !important; FONT-WEIGHT: normal
+}
+.cs-title B {
+	TEXT-ALIGN: center; LINE-HEIGHT: 22px; WIDTH: 64px; DISPLAY: inline-block; BACKGROUND: url(../image/cs-time-bg.gif) no-repeat 0px 0px
+}
+.cs-prev {
+	TEXT-INDENT: -9999em; WIDTH: 32px; HEIGHT: 31px
+}
+.cs-next {
+	TEXT-INDENT: -9999em; WIDTH: 32px; HEIGHT: 31px
+}
+.cs-prev {
+	POSITION: absolute; DISPLAY: block; BACKGROUND: url(../image/cs-prev.png) no-repeat 0px 0px; TOP: 18px; CURSOR: pointer; LEFT: 0px
+}
+.cs-next {
+	POSITION: absolute; BACKGROUND: url(../image/cs-next.png) no-repeat 0px 0px; TOP: 18px; RIGHT: 0px
+}
+#cs-navigation-coin-slider {
+	Z-INDEX: 10000; POSITION: absolute; WIDTH: 67px; BOTTOM: 0px; HEIGHT: 68px; RIGHT: 22px
+}
+/*banner 层样式 END*/

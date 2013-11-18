@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>橙天嘉禾影城</title>
+
+<link rel="stylesheet" type="text/css" href="css/css.css" />
+<SCRIPT type=text/javascript src="js/jquery-1.7.js"></SCRIPT>
+<SCRIPT type=text/javascript src="js/jquery.collapser.js"></SCRIPT>
+<SCRIPT type=text/javascript src="js/script.js"></SCRIPT>
+</head>
+
+<body>
+<div class="b_wrap02">
+
+
+  <!-- HEAD STAR -->
+  <div class="head_apv02">
+    <div class="head_apvright">
+      <ul>
+        <li><a href="#" class="dh_li01" title="帮助指南"><img src="images/dh05.png" /></a></li>
+        <li><a href="fy_影城页.html" class="dh_li01" title="嘉禾影城"><img src="images/dh04.png" /></a></li>
+        <li><a href="fy_time01.html" class="dh_li02" title="影片排期"><img src="images/dh03.png" /></a></li>
+        <li><a href="fy_time02.html" class="dh_li01" title="新片上映"><img src="images/dh02.png" /></a></li>
+        <li><a href="index.html" class="dh_li01" title="影城首页"><img src="images/dh01.png" /></a></li>
+      </ul>
+    </div>
+    <div class="head_apvleft_left">
+      <ul>
+        <li class="head_apvll_li01"> &nbsp; <a href="index.html">首 页</a></li>
+        <li>放映时间</li>
+      </ul>
+    </div>
+    <div class="head_apvleft"> <b style="font-size:15px;" onclick="onc_showdqapv()">我在<span id="diqu_name">北京</span> <a href="javascript:void(0);" ><img src="images/arrow_up2.png" /></a></b>
+      <!-- 地区切换弹出层START -->
+      <div class="head_apvlc" id="head_apvlcid" style="display:none;">
+        <div class="halc_ti">
+          <div class="halc_til">
+            <ul>
+              <li style="width:30px; line-height:24px; font-weight:normal;">&nbsp;</li>
+              <li id="diqu_mti01" onclick="onc_diqu(1)" class="halc_tilli">A-G</li>
+              <li id="diqu_mti02" onclick="onc_diqu(2)">H-L</li>
+              <li id="diqu_mti03" onclick="onc_diqu(3)">M-T</li>
+              <li id="diqu_mti04" onclick="onc_diqu(4)">Z-W</li>
+            </ul>
+          </div>
+          <div class="halc_tir">
+            <input type="text" id="top_key" class="top_input01" value="输入城市名称"  onfocus="onf_input4(this.id);" onblur="onb_input4(this.id)" />
+            <input type="button" class="top_btn01" />
+          </div>
+          <span><img onclick="onc_hiddendqapv()" src="images/m02c_close.gif" /></span></div>
+        <!-- 切换区域S -->
+        <div class="halc_te" id="halc_te01">
+          <ul>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+          </ul>
+        </div>
+        <!-- 切换区域END -->
+        <!-- 切换区域S -->
+        <div class="halc_te" id="halc_te02" style="display:none;">
+          <ul>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+          </ul>
+        </div>
+        <!-- 切换区域END -->
+        <div class="halc_te" id="halc_te03" style="display:none;">
+          <ul>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+          </ul>
+        </div>
+        <!-- 切换区域END -->
+        <div class="halc_te" id="halc_te04" style="display:none;">
+          <ul>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+          </ul>
+        </div>
+        <!-- 切换区域END -->
+      </div>
+      <!-- 地区切换弹出层END -->
+    </div>
+  </div>
+  <!-- HEAD END -->
+  <div class="login02"><a href="index.html"><img src="images/login02.png" /></a><span> <a href="reg_会员中心_基本资料账户信息.html" class="gly">心沫儿</a>的个人中心 &nbsp; <a href="#">退出</a></span></div>
+<!--  二级页 MAIN START -->
+
+<div class="main03">
+    
+    <div class="mdd_top">
+      <p>
+      您选择的是<font class="endi">25</font>元通票<br/>
+      适用影院：<br/>
+      <span>北京嘉禾上地影城   北京嘉禾国贸影城 <br/>
+      北京嘉禾万柳影城   北京嘉禾三元桥影城</span>
+      </p>
+      <h2>订单号：<font>1234567890</font></h2>
+      <div class="mdd_tdiv">
+        <p><span>刘理里<br/><font>15088999988<br/>yuanshiwuyu@163.com</font></span></p>
+        <ul>
+          <li><span>截止日期</span><br/>2011-10-08<br/>20:30:08</li>
+          <li class="dtdli2" style="color:#FFF; line-height:22px;">订单总金额<br/><font class="enhua">￥</font><font class="endi">800</font></li> 
+          <li><span>付款时间</span><br/>2011-10-08<br/>20:30:08</li>
+          <li><span>下单时间</span><br/>2011-10-08<br/>20:30:08</li>
+          
+        </ul>
+      </div>
+      <div class="mdd_tapv"><img src="images/mdd_ddt01.png" /></div>
+    </div>
+    
+    <div class="mdd_clist">
+       
+       <table cellspacing="0">
+          <tr>
+            <td class="td02"><span>商品列表</span></td>
+            <td class="td02" width="107"><span>消费码</span></td>
+            <td class="td02" width="170"><span>条形码券</span></td>
+            <td class="td02" width="85"><span>使用状态</span></td>
+            <td class="td02" width="112"><span>使用时间</span></td>
+            <td class="td02" width="135"><span>过期时间</span></td>
+            <td class="td02" width="88"><span>单价</span></td>
+          </tr>
+          
+          <tr>
+            <td><font class="enzim">Nov15,2011-25</font>元嘉禾通票</td>
+            <td><font class="enzim">sh76h34</font></td>
+            <td><font class="endi">01010000000110</font></td>
+            <td>已使用</td>
+            <td><font class="enzim">2011-10-08<br/>20:30:08</font></td>
+            <td><font class="enzim">2011-10-08<br/>20:30:08</font></td>
+            <td><font class="enhua">￥</font><font class="endi">25</font></td>
+          </tr>
+          
+          <tr>
+            <td><font class="enzim">Nov15,2011-25</font>元嘉禾通票</td>
+            <td><font class="enzim">sh76h34</font></td>
+            <td><font class="endi">01010000000110</font></td>
+            <td>已使用</td>
+            <td><font class="enzim">2011-10-08<br/>20:30:08</font></td>
+            <td><font class="enzim">2011-10-08<br/>20:30:08</font></td>
+            <td><font class="enhua">￥</font><font class="endi">25</font></td>
+          </tr>
+          
+       </table>
+       
+    </div>
+    
+    <div class="mdd_cprint"><a href="#" title="打印"><img src="images/fy_mtu02.png" /></a></div>
+    
+    <div class="mdd_bot">
+       <p>
+       <span>使用说明</span><br/>
+1.通票使用有效期为1个月，周一至周五18:00前,2D/3D通兑，情人节、圣诞节、元旦等特殊节<br/>日和首映礼、明星见面会不予参加。<br/>
+2.本通票仅限同城兑换，购买时请仔细选择消费城市，以免为您的购票和观影造成损失。
+<br/>3.本通票不能直接作为电影票使用，消费者请持手机验证码到影城换票。
+<br/>4.本通票由于在网站随机生成，具有唯一性，一经售出，概不退换，敬请谅解。
+<br/>5.本通票不得兑换现金，未经橙天嘉禾影城许可和授权，通票严禁倒卖，如发现倒卖现象，影<br/>院有权予以没收，并保留追究倒卖人责任的权利。
+<br/>6.本通票为超值优惠活动，影城出票后不退不换，敬请见谅。
+       </p>
+    
+       <div class="mdd_bright">
+         <span>使用提醒</span> <br/>
+您（用户）保证您所提交的资料的真实性、准确性及完整性，并且您应采取必要措施保护您的密码及账号信息的安全。如果您的任何资料发生变化，您应及时更改。
+       </div>
+       
+       <div class="mdd_bapv"><img src="images/mdd_ddt02.png" /></div>
+       
+    </div>
+    
+</div>
+<!--  二级页 MAIN END -->
+
+
+<div class="bottom">
+    <a href="#">关于我们</a> | <a href="#">项目合作</a> | <a href="#">版权声明</a> | <a href="#">招聘信息</a> | <a href="#">联系方式</a>
+    <br/>copyright2006-2011 橙天娱乐嘉禾集团（国际）控股有限公司   京ICP备06040851号
+</div>
+
+</div>
+
+<div class="m03_ceapv2dd" style="top:817px; "></div>
+
+</body>
+</html>

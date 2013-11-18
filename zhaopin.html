@@ -1,0 +1,385 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>橙天嘉禾影城</title>
+
+<link rel="stylesheet" type="text/css" href="css/css.css" />
+<SCRIPT type=text/javascript src="js/jquery-1.7.js"></SCRIPT>
+<SCRIPT type=text/javascript src="js/jquery.collapser.js"></SCRIPT>
+<SCRIPT type=text/javascript src="js/script.js"></SCRIPT>
+</head>
+
+<body>
+<div class="b_wrap02">
+
+
+  <!-- HEAD STAR -->
+  <div class="head_apv02">
+    <div class="head_apvright">
+      <ul>
+        <li><a href="#" class="dh_li01" title="帮助指南"><img src="images/dh05.png" /></a></li>
+        <li><a href="fy_影城页.html" class="dh_li01" title="嘉禾影城"><img src="images/dh04.png" /></a></li>
+        <li><a href="fy_time01.html" class="dh_li02" title="影片排期"><img src="images/dh03.png" /></a></li>
+        <li><a href="fy_time02.html" class="dh_li01" title="新片上映"><img src="images/dh02.png" /></a></li>
+        <li><a href="index.html" class="dh_li01" title="影城首页"><img src="images/dh01.png" /></a></li>
+      </ul>
+    </div>
+    <div class="head_apvleft_left">
+      <ul>
+        <li class="head_apvll_li01"> &nbsp; <a href="index.html">首 页</a></li>
+        <li>放映时间</li>
+      </ul>
+    </div>
+    <div class="head_apvleft"> <b style="font-size:15px;" onclick="onc_showdqapv()">我在<span id="diqu_name">北京</span> <a href="javascript:void(0);" ><img src="images/arrow_up2.png" /></a></b>
+      <!-- 地区切换弹出层START -->
+      <div class="head_apvlc" id="head_apvlcid" style="display:none;">
+        <div class="halc_ti">
+          <div class="halc_til">
+            <ul>
+              <li style="width:30px; line-height:24px; font-weight:normal;">&nbsp;</li>
+              <li id="diqu_mti01" onclick="onc_diqu(1)" class="halc_tilli">A-G</li>
+              <li id="diqu_mti02" onclick="onc_diqu(2)">H-L</li>
+              <li id="diqu_mti03" onclick="onc_diqu(3)">M-T</li>
+              <li id="diqu_mti04" onclick="onc_diqu(4)">Z-W</li>
+            </ul>
+          </div>
+          <div class="halc_tir">
+            <input type="text" id="top_key" class="top_input01" value="输入城市名称"  onfocus="onf_input4(this.id);" onblur="onb_input4(this.id)" />
+            <input type="button" class="top_btn01" />
+          </div>
+          <span><img onclick="onc_hiddendqapv()" src="images/m02c_close.gif" /></span></div>
+        <!-- 切换区域S -->
+        <div class="halc_te" id="halc_te01">
+          <ul>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+          </ul>
+        </div>
+        <!-- 切换区域END -->
+        <!-- 切换区域S -->
+        <div class="halc_te" id="halc_te02" style="display:none;">
+          <ul>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+          </ul>
+        </div>
+        <!-- 切换区域END -->
+        <div class="halc_te" id="halc_te03" style="display:none;">
+          <ul>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+          </ul>
+        </div>
+        <!-- 切换区域END -->
+        <div class="halc_te" id="halc_te04" style="display:none;">
+          <ul>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">北京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">天津</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">上海</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">重庆</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">南京</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">深圳</a></li>
+            <li><a href="javascript:void(0);" onclick="onc_dqlinme(this.innerHTML)">广州</a></li>
+          </ul>
+        </div>
+        <!-- 切换区域END -->
+      </div>
+      <!-- 地区切换弹出层END -->
+    </div>
+  </div>
+  <!-- HEAD END -->
+  <div class="login02"><a href="index.html"><img src="images/login02.png" /></a><span> <a href="reg_会员中心_基本资料账户信息.html" class="gly">心沫儿</a>的个人中心 &nbsp; <a href="#">退出</a></span></div>
+<!--  二级页 MAIN START -->
+
+<div class="main02">
+    
+    <div class="zp_info">
+          <div class="myp_mh2">
+         <table width="100%" cellpadding="0" cellspacing="0">
+         <td style="font-size:22px;color:#ff9c00; font-weight:bold;"><div style="margin-bottom:-6px;">招聘信息</div></td>
+         <td class="myp_mhcen"></td>
+         <td width="422" valign="bottom"><img src="images/myp_mh01z.png" /></td>
+         <td width="40" align="left"></td>
+         </table>
+         </div>
+         
+         <div class="zp_info_te">
+           <p>
+           
+<b>节目开发总监</b>
+<br/>岗位职责：
+<br/>1、负责对外合作项目的挖掘、商业合作洽谈及客户跟进工作；
+<br/>2、负责影城非影片放映项目(话剧、演唱会等演出项目)的商业开发工作，挖掘新的商业机会及盈利增长点；
+<br/>3、研究市场动态，负责搜集/整理演唱会、舞台剧、话剧等市场的行业信息及发展趋势，对不同地理区域项目发展计划进行可行性分析；
+<br/>4、负责演唱会、舞台剧、话剧等文娱项目的挖掘及评估工作，寻找优质项目进行合作；
+<br/>5、负责商业合作谈判及合作客户、演出方的关系维护工作。
+<br/>任职资格：
+<br/>1、本科以上学历，工商管理、市场营销、影视等相关专业毕业；
+<br/>2、5年以上文化演出行业市场/销售类工作经验；
+<br/>3、熟悉商业演出操作流程，具备话剧、演唱会等文娱项目的策划、实施能力，对演出市场具有深刻认知；
+<br/>4、敏锐的市场洞察力及商业意识，出色的商务谈判及公关能力，高度的执行力。
+
+
+<br/><br/><b>节目制作总监</b>
+<br/>岗位职责：
+<br/>1、负责影城非影片类节目的(话剧、舞台剧、演唱会等演出项目)的制作策划及项目执行全周期管理工作工作，对节目质量负责；
+<br/>2、负责影城非影片类放映节目的制作工作，根据影城营业特点对节目源进行二次策划及编排制作；
+<br/>3、全面负责节目制作的全过程，保证项目的顺畅执行，并对节目质量和进度负责；
+<br/>4、负责项目预决算工作，对项目成本进行全盘把控；负责对接节目提供方及外部制作团队，及时准确的传达公司制作要求，保证节目制作进程及质量。
+<br/>任职资格：
+<br/>1、本科及其以上学历，电影、美术、设计、纸片等相关专业毕业；
+<br/>2、5年以上制片工作经验，精通影视节目及文艺演出类节目制作流程，良好的文艺演出行业资源及人脉；
+<br/>3、广告公司、公关公司、演出公司文艺演出策划/执行及相关节目制作经验者优先；
+<br/>4、出色的沟通协调能力，高度的执行力及推动力，良好的项目管理管理意识及全局意识。
+
+<br/><br/><b>业务拓展高级经理</b>
+<br/>岗位职责：
+<br/>1、负责新建影院的商业选址及谈判；
+<br/>2、负责寻找并租赁获取合适建设影城的项目；
+<br/>3、负责影城市场的实地调研工作；
+<br/>4、选择有实力的地产开发商结成战略合作伙伴；
+<br/>5、影城项目的整体协调工作；
+<br/>6、上级交办的其它事务。
+<br/>任职资格：
+<br/>1、大专及其以上学历，3年以上商业商圈/连锁行业/地产行业商务拓展工作经验；
+<br/>2、熟悉商务拓展流程，连锁行业新店选址及商务拓展经验者优先；
+<br/>3、熟练使用Office等常用办公软件；
+<br/>4、敏锐的洞察力，出色的客户需求挖掘能力，公关能力强；
+<br/>5、良好的表达能力、逻辑思维能力及沟通协调能力； 
+<br/>6、出色的团队精神、敬业精神及抗压能力，可接受经常出差。
+
+<br/><br/><b>业务拓展经理</b>
+<br/>岗位职责：
+<br/>1、负责新建影院的商业选址及谈判；
+<br/>2、负责寻找并租赁获取合适建设影城的项目；
+<br/>3、负责影城市场的实地调研工作；
+<br/>4、选择有实力的地产开发商结成战略合作伙伴；
+<br/>5、影城项目的整体协调工作；
+<br/>6、上级交办的其它事务。
+<br/>任职资格：
+<br/>1、大专及其以上学历，2年以上商业商圈/连锁行业/地产行业商务拓展工作经验；
+<br/>2、熟悉商务拓展流程，连锁行业新店选址及商务拓展经验者优先；
+<br/>3、熟练使用Office等常用办公软件；
+<br/>4、敏锐的洞察力，出色的客户需求挖掘能力，公关能力强；
+<br/>5、良好的表达能力、逻辑思维能力及沟通协调能力； 
+<br/>6、出色的团队精神、敬业精神及抗压能力，可接受经常出差。
+
+<br/><br/><b>招聘经理</b>
+<br/>岗位职责：
+<br/>1、根据公司业务发展需求，完成部门人力资源规划，掌握各部门招聘需求。　　
+<br/>2、依据年度招聘计划制定招聘方案，选择有效的招聘渠道并组织实施。
+<br/>3、负责实施招聘方案的各项具体活动，保证招聘任务顺利完成。
+<br/>4、维护和完善招聘渠道，改进公司人才选拔体系和招聘收集，分析行业人才状况。
+<br/>5、组织和协助公司组织架构设计和岗位设置，组织梳理和完善公司的岗位描述说明书。
+ 
+<br/>任职资格：
+<br/>1、本科以上学历，人力资源或管理类相关专业优先；
+<br/>2、5年以上人力资源工作经验，其中至少3年以上招聘工作经验；
+<br/>3、熟悉各招聘渠道及面试技巧；
+<br/>4、良好的沟通技巧和与人交往的能力，有敏锐的判断能力； 
+<br/>5、良好的职业道德、职业操守及团队合作意识。
+
+<br/><br/><b>招商经理</b>
+<br/>岗位职责
+<br/>1、积极主动协助招商总监完成年度招商任务；
+<br/>2、与运营部对接影城空地销控状况；
+<br/>3、协助招商总监规划新/筹备中影城空地，制定未来招商业态；
+<br/>4、协助管理对已进场商家经营状况(缴纳租金，经营状况，合约到期的后期跟进)；
+<br/>5、定期与招商总监，影城负责人交流沟通现场商家经营品质；
+<br/>6、定期向招商总监汇报工作7.积极配合完成公司下达的招商任务。
+<br/>任职资格 
+<br/>1、专科及以上学历，市场营销等相关专业；
+<br/>2、3年以上招商、销售类工作经验，有大型企业商务运作经历者优先；
+<br/>3、具有丰富的招商渠道和营销网络资源，具备招商管理经验；
+<br/>4、具有较强的沟通协调能力和人际洞察力，有很强的团队管理能力；
+<br/>5、能承担较大压力。
+
+<br/><br/><b>中级.net工程师</b>
+<br/>岗位职责：
+<br/>1.掌握MS SQL数据库相关开发，T-SQL查询、存储过程代码开发； 
+<br/>2.掌握ASP.Net Web开发相关的前端、服务器端相关开发技术； 
+<br/>3.掌握ASP.Net Web Service开发，了解Remoting开发等分布式远程调用技术； 
+<br/>4.了解 Web开发安全技术； 
+<br/>5.掌握winform相关开发技术； 
+<br/>6.具备良好规范的编程风格，包括：可读性、友好性、复用性、可跟踪性、安全性、运行效率、异常处理等。 
+<br/>任职资格：
+<br/>1、计算机相关专业本科以上学历；
+<br/>2、.Net 开发经验2年或以上； 
+<br/>3、工作态度认真负责，可以按时、保质、保量完成工作任务； 
+<br/>4、有大型网站开发经验者优先；
+<br/>5、熟悉系统架构者优先；
+<br/>6、有强烈的责任心和工作热情，有较强的解决问题能力和方法，对给定的问题和任务，能想办法通过不同途径找到合适的解决方案。
+
+<br/><br/><b>财务经理</b>
+<br/>岗位职责：
+<br/>1. 主持日常财务、会计及税务管理工作，管理监督基础财务的工作质量；
+<br/>2. 建立公司的会计核算体系，制定会计核算制度及财务管理制度，并监督执行；
+<br/>3. 编制实施企业预决算、财务收支和资金筹措计划，负责成本核算和控制；
+<br/>4. 定期组织资产清查盘点，保证财产安全；
+<br/>5. 确保资金的有效管理，加速资金周转，考核资金使用效果，规避资金和债务风险；
+<br/>6. 完成各项财务结算、会计核算，上报财务执行情况，为管理层提供分析数据；
+<br/>7. 定期清理往来帐户，及时催收和清偿款项，做好帐务核对，组织审计工作；
+<br/>8. 负责部门团队建设及员工培养，制定财务内部相关指标，做好绩效考核管理；
+<br/>9. 全面负责帐务问题处理及税务的协调工作，维系好与银行及税务机关的关系。
+<br/>任职资格：
+<br/>1.严谨、为人正派、责任心强、有较强的沟通协调能力，具备大专及以上学历；
+<br/>2.具备3年及以上会计工作经验，有审计及外资公司工作经验者优先；
+<br/>3.精通国家财税法律规范和财务核算、财务管理、财务分析、财务预测等财务制度与业务；
+<br/>4.熟悉税务和免抵税相关知识及法规、熟悉报税流程。
+
+
+<br/><br/><b>区域财务经理</b>
+<br/>岗位职责：
+<br/>1、 负责指导区域影城主管及会计出纳等日常账务、会计及税务工作，监督影城基础财务的工作质量；
+<br/>2、 负责协助高级经理完成日常各区影城的日常财务工作；
+<br/>3、 负责协助影城运营完成年度预算、财务收支等计划，协助影城成本核算和控制；
+<br/>4、 负责协助资金经理完成资金的有效管理；
+<br/>5、 负责审核各影城财务报表，完成各项财务结算、会计核算，上报财务执行情况，为管理层提供分析数据；
+<br/>6、 负责配合审计完成各影城审计工作；
+<br/>7、 负责各区影城财务团队建设及员工培养，协助做好绩效考核管理。
+
+<br/>任职资格：
+<br/>1、大专及以上学历，会计等相关专业；
+<br/>2、5年及以上会计工作经验，有审计及外资公司工作经验者优先； 
+<br/>3、精通国财税法律规范和财务核算、财务管理、财务分析、财务预测等财务制度与业务；
+<br/>4、熟悉税务和免抵税相关知识及法规、熟悉报税流程；
+<br/>5、具有较好的沟通协调能力及较强的责任心。
+
+<br/><br/><b>销售总监</b>
+<br/>岗位职责：
+<br/>1.	根据公司整体经营战略，制定全国影城销售计划并执行，实现销售指标，创造经营利润；
+<br/>2.	为影院提供可行性市场销售策略及方案，巩固、开拓团体业务市场；
+<br/>3.	通过销售策略和方案在全线影院的合理运用，全面提高影院票房、观影人次及重复观影频率；
+<br/>4.	根据不同时期市场及影片上映情况，制定销售及促销活动方案；
+<br/>5.	规范广告业务拓展及客户服务工作，围绕客户需求，制定个性化营销策略完善，优化广告销售体系，建立规范化的客户管理体系；
+<br/>6.	主责渠道及大客户销售工作，负责资源互换及新产品推广工作；
+<br/>7.	负责销售团队建设及管理工作，搭建高效执行团队。
+<br/>任职资格：
+<br/>1.	本科及其以上学历，市场营销、工商管理、企业管理等相关专业；
+<br/>2.	7年以上销售工作经验，其中3年以上同等岗位工作经验，具备出色的市场销售策略规划能力及集团化公司总部工作经验；
+<br/>3.	精通渠道客户及大客户销售技巧，出色的客户挖掘能力，服务型连锁企业、传媒企业工作背景及具有丰富客户资源者优先；
+<br/>4.	深知新品推广策略及方式方法，对资源整合及资源互换具有独到见解；
+<br/>5.	良好的团队管理能力，具备组织相关团队成员高水准地实现公司战略、策略、规划、方案的能力； 
+<br/>6.	敏锐的市场直觉，出色的市场潜力预测能力；
+<br/>7.	出色的商业谈判能力和较高水平的公共关系处理能力；
+<br/>8.	出色的沟通能力、组织协调能力及执行力，抗压能力强。
+
+<br/><br/><b>前台</b>
+<br/>岗位职责 
+<br/>1、负责公司前台接待及电话接转；
+<br/>2、收发传真，复印文档，收发信件、报刊、文件等；
+<br/>3、及时更新和管理员工通讯地址和电话号码等联系信息；
+<br/>4、预订火车票、飞机票；
+<br/>5、办理新员工工卡，负责员工考勤管理、统计；
+<br/>6、协助上级购置办公设备、办公用品，负责发放及记录。
+<br/>任职资格 
+<br/>1、文秘、行政管理及相关专业大专以上学历；
+<br/>2、一年以上相关工作经验；
+<br/>3、熟悉前台工作流程，熟练使用各种办公自动化设备；
+<br/>4、工作热情积极、细致耐心，具有良好的沟通能力、协调能力，性格开朗，相貌端正，待人热诚；
+<br/>5、熟练使用相关办公软件。
+
+<br/><br/><b>高级客户经理</b>
+<br/>岗位职责：
+<br/>1、负责大型企业客户开发及关系维护；
+<br/>2、负责影城销售人员管理及监督考核；
+<br/>3、负责企业客户销售策略拟定及执行并落实销售方案推进；
+<br/>4、负责协助销售指标达成、销售制度优化。
+<br/>任职资格：
+<br/>1、专科及以上学历，市场营销等相关专业；
+<br/>2、3年以上销售管理、商业管理经验，以及客户开发经验；
+<br/>3、熟练操作Excel,Word,,Outlook,PowerPoint等日常办公软件；
+<br/>4、具备优秀的沟通、协调及管理能力，良好的职业道德和团队协作精神。
+
+
+           </p>
+         
+         </div>
+       
+    </div>
+   
+</div>
+<!--  二级页 MAIN END -->
+
+  <div class="bottom"> 
+   <span><img src="images/bottombg.png" /></span>
+<a href="#">关于我们</a> | <a href="#">商业合作</a> | <a href="#">版权声明</a> | <a href="#">招聘信息</a> | <a href="#">联系方式</a> <br/>
+    COPYRIGHT2006-2011 橙天娱乐嘉禾集团（国际）控股有限公司   京ICP备06040851号 
+  </div>
+
+</div>
+
+</body>
+</html>
